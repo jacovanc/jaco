@@ -11,40 +11,44 @@
       </h1> -->
 
       <!-- Introduction -->
-      <div class="mt-4">
-        <div class="w-72 max-w-full">
+      <div class="mt-4 sm:flex sm:flex-row sm:gap-2 sm:items-center">
+        <div>
+          <div class="w-96 max-w-full sm:w-72">
+            <div
+              class="mb-3 mx-auto overflow-hidden rounded-2xl shadow-lg max-w-full relative pt-[100%]"
+            >
+              <img
+                src="~/assets/images/me.jpg"
+                alt="Jaco's Portrait"
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
           <div
-            class="mb-3 mx-auto overflow-hidden rounded-2xl shadow-lg max-w-full relative pt-[100%]"
+            class="bg-white rounded p-2 inline-block relative ml-3 shadow-lg speech-bubble"
           >
-            <img
-              src="~/assets/images/me.jpg"
-              alt="Jaco's Portrait"
-              class="absolute top-0 left-0 w-full h-full object-cover"
-            />
+            <p class="text-xl font-sans font-bold">Hi, I'm Jaco! 👋</p>
           </div>
         </div>
-
-        <div
-          class="bg-white rounded p-2 inline-block relative ml-3 shadow-lg speech-bubble"
-        >
-          <p class="text-xl font-sans font-bold text-text">Hi, I'm Jaco! 👋</p>
+        <div class="sm:ml-6 pb-6">
+          <h2 class="text-2xl font-sans font-bold">
+            Your <span class="text-secondary">Web Specialist</span> committed to
+            helping you succeed online
+          </h2>
+          <p class="mt-2 md:w-80">
+            Don't just settle for a website. Build a
+            <span class="text-secondary font-bold">digital presence</span> that
+            you
+            <span class="text-secondary font-bold">fully own.</span>
+          </p>
+          <a class="btn btn-accent mt-4" href="#packages">View Packages</a>
         </div>
-
-        <h2 class="text-2xl font-sans font-bold">
-          Your <span class="text-secondary">Web Specialist</span> committed to
-          helping you succeed online
-        </h2>
-        <p class="mt-2">
-          Don't just settle for a website. Build a
-          <span class="text-primary font-bold">digital presence</span> that you
-          <span class="text-primary font-bold">fully own.</span>
-        </p>
-        <a class="btn btn-accent mt-4" href="#packages">View Packages</a>
       </div>
     </section>
 
     <!-- Digital Presence Section -->
-    <section id="digital-presence">
+    <section id="digital-presence" class="mt-10">
       <h2 class="font-heading text-2xl font-bold text-primary">
         Take Charge of Your Digital Presence
       </h2>

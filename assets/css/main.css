@@ -4,13 +4,11 @@
 @tailwind utilities;
 
 @layer base {
-  /* html {
-    @apply text-gray-700;
-  } */
+  html {
+    /* @apply text-gray-700; */
+  }
 }
 
-/* .btn-primary,
-.btn-secondary,
-.btn-accent {
-  @apply text-white;
-} */
+body {
+  text-wrap: balance;
+}
