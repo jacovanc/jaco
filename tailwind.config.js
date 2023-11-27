@@ -17,8 +17,6 @@ export default {
 
       colors: {
         neutral: "#FDFEFE", // Off-White
-        "primary-100": "#f4fbff",
-        "secondary-100": "#1ABC9C",
       },
     },
 
@@ -45,7 +43,7 @@ export default {
       // "nord",
       {
         mytheme: {
-          // ...require("daisyui/src/theming/themes")["nord"],
+          ...require("daisyui/src/theming/themes")["nord"],
           primary: "#2980B9",
           "primary-content": "#FDFEFE",
           secondary: "#1ABC9C",

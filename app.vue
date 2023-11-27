@@ -61,7 +61,7 @@
 
       <ul class="flex flex-wrap gap-4 mt-6">
         <li
-          class="flex-grow border bg-primary-100 shadow-lg p-4 border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          class="flex-grow border bg-primary bg-opacity-5 shadow-lg p-4 border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-lg">Complete Control</strong>
           <strong class="text-primary">Your website, your rules.</strong>
@@ -69,7 +69,7 @@
           and vendor lock-ins.
         </li>
         <li
-          class="flex-grow border p-4 bg-secondary-100 bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          class="flex-grow border p-4 bg-secondary bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-lg">Growth-Ready</strong>
           <strong class="text-secondary">Evolve</strong> your website in tandem
@@ -77,7 +77,7 @@
           <strong class="text-secondary">without starting from scratch</strong>
         </li>
         <li
-          class="flex-grow border p-4 border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          class="flex-grow border p-4 bg-secondary bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-lg">Vendor Independence</strong>
           <strong class="text-secondary">Break free</strong> from the confines
@@ -88,48 +88,7 @@
         <!-- More list items here -->
       </ul>
 
-      <div role="alert" class="alert mt-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="stroke-current shrink-0 w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          ></path>
-        </svg>
-        <span class="text-sm"
-          >Most importantly, I handle all the technical intricacies, so you can
-          focus solely on your business.</span
-        >
-      </div>
-      <div role="alert" class="alert alert-info mt-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="stroke-current shrink-0 w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          ></path>
-        </svg>
-        <span class="text-sm"
-          >Most importantly, I handle all the technical intricacies, so you can
-          focus solely on your business.</span
-        >
-      </div>
-
-      <a class="btn btn-accent btn-outline mt-4" href="#contact-form"
-        >Contact me!</a
-      >
+      <a class="btn btn-accent mt-4" href="#contact-form">Contact me!</a>
     </section>
 
     <!-- Packages Section -->
@@ -254,8 +213,27 @@
       </ul>
     </section>
 
+    <section id="process">
+      <h2 class="font-heading text-2xl font-bold text-primary">
+        What does the process look like?
+      </h2>
+      <p class="mt-2 mb-2">
+        Here's a brief overview of the steps involved in creating your new
+        website, from start to finish.
+      </p>
+      <ul class="steps steps-vertical mt-2">
+        <li class="step step-secondary">Get in touch!</li>
+        <!-- We should probably add some info explaining each section. Perhaps collapsable like the faqs -->
+        <li class="step step-secondary">Arrange a call</li>
+        <li class="step">Development</li>
+        <li class="step">Feedback and adjustments</li>
+        <li class="step">Quality Assurance</li>
+        <li class="step">Launch</li>
+      </ul>
+    </section>
+
     <!-- FAQ Section -->
-    <section id="faq">
+    <section id="faq" class="mt-10">
       <h2 class="font-heading text-2xl font-bold text-primary">
         Frequently Asked Questions (FAQ)
       </h2>
