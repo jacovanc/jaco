@@ -58,7 +58,7 @@ export default {
           error: "#ff5724",
 
           // neutral: "#FDFEFE",
-          // base-100: "#FDFEFE",
+          "base-100": "#FDFEFE",
           // other colors...
 
           "--border-btn": "2px",

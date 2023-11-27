@@ -16,8 +16,11 @@
       >
         <div>
           <div class="w-96 max-w-full sm:w-72 md:w-80">
-            <div
+            <!-- <div
               class="mb-3 mx-auto overflow-hidden rounded-2xl shadow-lg max-w-full relative pt-[100%]"
+            > -->
+            <div
+              class="mb-3 mx-auto overflow-hidden mask mask-squircle shadow-lg max-w-full relative pt-[100%]"
             >
               <img
                 src="~/assets/images/me.jpg"
@@ -28,7 +31,7 @@
           </div>
 
           <div
-            class="bg-white rounded p-2 inline-block relative ml-3 shadow-lg speech-bubble"
+            class="bg-white rounded p-2 inline-block relative ml-10 shadow-lg speech-bubble"
           >
             <p class="text-xl font-sans font-bold">Hi, I'm Jaco! 👋</p>
           </div>
@@ -61,20 +64,20 @@
 
       <ul class="flex flex-wrap gap-4 mt-6">
         <li
-          class="flex-grow border bg-primary bg-opacity-5 shadow-lg p-4 border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          class="flex-grow border bg-secondary bg-opacity-5 shadow-lg p-4 border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-lg">Complete Control</strong>
-          <strong class="text-primary">Your website, your rules.</strong>
+          <strong class="text-secondary">Your website, your rules.</strong>
           Modify, upgrade, or change as you grow, free from platform limitations
           and vendor lock-ins.
         </li>
         <li
-          class="flex-grow border p-4 bg-secondary bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          class="flex-grow border p-4 bg-primary bg-opacity-5 shadow-lg border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-lg">Growth-Ready</strong>
-          <strong class="text-secondary">Evolve</strong> your website in tandem
+          <strong class="text-primary">Evolve</strong> your website in tandem
           with your business needs,
-          <strong class="text-secondary">without starting from scratch</strong>
+          <strong class="text-primary">without starting from scratch</strong>
         </li>
         <li
           class="flex-grow border p-4 bg-secondary bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
@@ -213,7 +216,7 @@
       </ul>
     </section>
 
-    <section id="process">
+    <section id="process" class="mt-10">
       <h2 class="font-heading text-2xl font-bold text-primary">
         What does the process look like?
       </h2>
@@ -310,7 +313,7 @@
 
 <style>
 .speech-bubble {
-  top: -25px;
+  top: -40px;
 }
 .speech-bubble::after {
   content: "";
