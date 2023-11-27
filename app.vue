@@ -11,9 +11,11 @@
       </h1> -->
 
       <!-- Introduction -->
-      <div class="mt-4 sm:flex sm:flex-row sm:gap-2 sm:items-center">
+      <div
+        class="mt-10 sm:flex sm:flex-row sm:items-center sm:gap-6 sm:justify-center"
+      >
         <div>
-          <div class="w-96 max-w-full sm:w-72">
+          <div class="w-96 max-w-full sm:w-72 md:w-80">
             <div
               class="mb-3 mx-auto overflow-hidden rounded-2xl shadow-lg max-w-full relative pt-[100%]"
             >
@@ -31,12 +33,12 @@
             <p class="text-xl font-sans font-bold">Hi, I'm Jaco! 👋</p>
           </div>
         </div>
-        <div class="sm:ml-6 pb-6">
+        <div class="sm:pb-6 w-80 md:w-96 max-w-full">
           <h2 class="text-2xl font-sans font-bold">
             Your <span class="text-secondary">Web Specialist</span> committed to
             helping you succeed online
           </h2>
-          <p class="mt-2 md:w-80">
+          <p class="mt-2">
             Don't just settle for a website. Build a
             <span class="text-secondary font-bold">digital presence</span> that
             you
@@ -52,40 +54,86 @@
       <h2 class="font-heading text-2xl font-bold text-primary">
         Take Charge of Your Digital Presence
       </h2>
-      <p class="mt-2">
+      <p class="mt-2 mb-2">
         Ditch the constraints of third-party platforms. Own your website, own
         your future. Here's how:
       </p>
-      <ul>
-        <li>
-          <strong>Complete Control:</strong> Your website, your rules. Modify,
-          upgrade, or change as you grow, free from platform limitations and
-          vendor lock-ins.
+
+      <ul class="flex flex-wrap gap-4 mt-6">
+        <li
+          class="flex-grow border bg-primary-100 shadow-lg p-4 border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+        >
+          <strong class="block mb-2 text-lg">Complete Control</strong>
+          <strong class="text-primary">Your website, your rules.</strong>
+          Modify, upgrade, or change as you grow, free from platform limitations
+          and vendor lock-ins.
         </li>
-        <li>
-          <strong>Growth-Ready:</strong> Evolve your website in tandem with your
-          business needs, without starting from scratch.
+        <li
+          class="flex-grow border p-4 bg-secondary-100 bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+        >
+          <strong class="block mb-2 text-lg">Growth-Ready</strong>
+          <strong class="text-secondary">Evolve</strong> your website in tandem
+          with your business needs,
+          <strong class="text-secondary">without starting from scratch</strong>
         </li>
-        <li>
-          <strong>Vendor Independence:</strong> Break free from the confines of
-          platforms like Wix. Embrace design freedom, enhanced functionality,
-          and portability.
+        <li
+          class="flex-grow border p-4 border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+        >
+          <strong class="block mb-2 text-lg">Vendor Independence</strong>
+          <strong class="text-secondary">Break free</strong> from the confines
+          of platforms like Wix.
+          <strong class="text-secondary">Embrace design freedom</strong>,
+          enhanced functionality, and portability.
         </li>
+        <!-- More list items here -->
       </ul>
-      <p>
-        Most importantly, I handle all the technical intricacies, so you can
-        focus solely on your business. From coding to hosting, I've got you
-        covered. This means you can direct your energy where it matters most -
-        growing your brand and connecting with your audience.
-      </p>
-      <p>
-        Join me in this journey of true digital independence, every step of the
-        way.
-      </p>
+
+      <div role="alert" class="alert mt-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="stroke-current shrink-0 w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <span class="text-sm"
+          >Most importantly, I handle all the technical intricacies, so you can
+          focus solely on your business.</span
+        >
+      </div>
+      <div role="alert" class="alert alert-info mt-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="stroke-current shrink-0 w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <span class="text-sm"
+          >Most importantly, I handle all the technical intricacies, so you can
+          focus solely on your business.</span
+        >
+      </div>
+
+      <a class="btn btn-accent btn-outline mt-4" href="#contact-form"
+        >Contact me!</a
+      >
     </section>
 
     <!-- Packages Section -->
-    <section id="packages">
+    <section id="packages" class="mt-10">
       <h2>New Website Packages</h2>
 
       <!-- Starter Package -->
@@ -208,32 +256,65 @@
 
     <!-- FAQ Section -->
     <section id="faq">
-      <h2>Frequently Asked Questions (FAQ)</h2>
-      <dl>
-        <dt>Q: How do I get started with my new website?</dt>
-        <dd>
-          A: <a href="#contact-form">Contact me</a> and we'll discuss your needs
-          to find the perfect package for you.
-        </dd>
+      <h2 class="font-heading text-2xl font-bold text-primary">
+        Frequently Asked Questions (FAQ)
+      </h2>
+      <div class="join join-vertical w-full mt-4">
+        <div class="collapse collapse-arrow join-item border border-primary">
+          <input type="radio" name="my-accordion" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            How do I get started with my new website?
+          </div>
+          <div class="collapse-content">
+            <p>
+              <a href="#contact-form">Contact me</a> and we'll discuss your
+              needs to find the perfect package for you.
+            </p>
+          </div>
+        </div>
 
-        <dt>Q: Can I upgrade my website package in the future?</dt>
-        <dd>
-          A: Absolutely! Your website can grow and evolve with your business.
-          You can even take your code with you to another developer.
-        </dd>
+        <div class="collapse collapse-arrow join-item border border-primary">
+          <input type="radio" name="my-accordion" />
+          <div class="collapse-title text-xl font-medium">
+            Can I upgrade my website package in the future?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Absolutely! Your website can grow and evolve with your business.
+              You can even take your code with you to another developer.
+            </p>
+          </div>
+        </div>
 
-        <dt>Q: What kind of ongoing support do you offer?</dt>
-        <dd>
-          A: I provide 6 months of support and hosting with all my services,
-          with options for extended assistance.
-        </dd>
+        <div class="collapse collapse-arrow join-item border border-primary">
+          <input type="radio" name="my-accordion" />
+          <div class="collapse-title text-xl font-medium">
+            What kind of ongoing support do you offer?
+          </div>
+          <div class="collapse-content">
+            <p>
+              I provide 6 months of support and hosting with all my services,
+              with options for extended assistance.
+            </p>
+          </div>
+        </div>
 
-        <dt>Q: Do you provide training on how to use my new website?</dt>
-        <dd>
-          A: Yes, I offer guidance to help you manage and update your site
-          confidently.
-        </dd>
-      </dl>
+        <div class="collapse collapse-arrow join-item border border-primary">
+          <input type="radio" name="my-accordion" />
+          <div class="collapse-title text-xl font-medium">
+            Do you provide training on how to use my new website?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Yes, I offer guidance to help you manage and update your site
+              confidently.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-2">Have more questions?</p>
+      <a class="btn btn-accent mt-4" href="#contact-form">Get in touch!</a>
     </section>
 
     <!-- Contact Section -->

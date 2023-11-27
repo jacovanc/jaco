@@ -15,13 +15,11 @@ export default {
         heading: ["Montserrat", "sans-serif"], // For headings
       },
 
-      // colors: {
-      //   primary: "#2980B9", // Deep Blue
-      //   secondary: "#1ABC9C", // Vibrant Teal
-      //   accent: "#E67E22", // Warm Orange
-      //   neutral: "#FDFEFE", // Off-White
-      //   text: "#34495E", // Dark Grey
-      // },
+      colors: {
+        neutral: "#FDFEFE", // Off-White
+        "primary-100": "#f4fbff",
+        "secondary-100": "#1ABC9C",
+      },
     },
 
     container: {
@@ -35,8 +33,9 @@ export default {
       },
     },
     screens: {
+      tn: "440px",
       sm: "640px",
-      md: "960px",
+      md: "840px",
     },
   },
   daisyui: {
@@ -46,13 +45,19 @@ export default {
       // "nord",
       {
         mytheme: {
-          ...require("daisyui/src/theming/themes")["nord"],
+          // ...require("daisyui/src/theming/themes")["nord"],
           primary: "#2980B9",
           "primary-content": "#FDFEFE",
           secondary: "#1ABC9C",
           "secondary-content": "#FDFEFE",
           accent: "#E67E22",
           "accent-content": "#FDFEFE",
+
+          // info: "#3498DB",
+          info: "#1c92f2",
+          success: "#009485",
+          warning: "#ff9900",
+          error: "#ff5724",
 
           // neutral: "#FDFEFE",
           // base-100: "#FDFEFE",
