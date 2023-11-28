@@ -101,14 +101,17 @@
   </div>
   <!-- Packages Section -->
   <section id="packages" class="mt-10 bg-base-300 py-10">
-    <div class="container md:max-w-[800px] lg:max-w-[1000px]">
-      <h2 class="font-heading text-2xl font-bold text-primary">
-        New Website Packages
-      </h2>
+    <h2 class="container font-heading text-2xl font-bold text-primary">
+      New Website Packages
+    </h2>
 
-      <div class="flex flex-col gap-4 mt-6">
+    <div class="container lg:max-w-[1200px] mt-10">
+      <div
+        class="flex flex-row gap-4 sm:gap-2 mt-6 flex-wrap md:flex-nowrap justify-start lg:justify-center items-center"
+      >
         <!-- Starter Package -->
         <Package
+          class="max-w-[400px] sm:max-w-[300px] md:scale-95 lg:scale-100 md:rotate-[-2deg] md:-mr-4 lg:mr-0"
           :packageName="'🌱 Starter Package'"
           :listItems="[
             'User-friendly WordPress',
@@ -131,6 +134,7 @@
 
         <!-- Growth Package -->
         <Package
+          class="max-w-[350px] sm:max-w-[300px] md: md:scale-105 lg:scale-110 z-10 md:-mr-4 lg:mr-0"
           :packageName="'🌟 Growth Package'"
           :listItems="[
             'Implemented based on your designs or wireframes',
@@ -152,6 +156,7 @@
 
         <!-- Expansion Package -->
         <Package
+          class="max-w-[350px] sm:max-w-[300px] lg:rotate-[2deg] md:scale-95 lg:scale-100 md:rotate-[2deg]"
           :packageName="'🚀 Expansion Package'"
           :listItems="[
             'Advanced custom solutions',
@@ -171,13 +176,14 @@
           ]"
           :price="'£6000'"
         />
-
-        <!-- Custom Path -->
-        <Package
-          :packageName="'✨ Custom Path'"
-          :listItems="['Unique requirements or larger-scale projects.']"
-        />
       </div>
+
+      <!-- Custom Path -->
+      <Package
+        class="max-w-[350px] sm:max-w-[300px] lg:mt-6"
+        :packageName="'✨ Custom Path'"
+        :listItems="['Unique requirements or larger-scale projects.']"
+      />
     </div>
   </section>
 
