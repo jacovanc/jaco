@@ -56,62 +56,68 @@
     </div>
   </section>
 
-  <div id="main-content" class="container py-4">
-    <!-- Digital Presence Section -->
-    <section id="digital-presence" class="mt-10">
-      <h2 class="font-heading text-2xl font-bold text-primary">
-        Take Charge of Your Digital Presence
-      </h2>
+  <div class="">
+    <div id="main-content" class="container py-20">
+      <!-- Digital Presence Section -->
+      <section id="digital-presence" class="">
+        <h2 class="font-heading text-4xl font-bold">
+          Take Charge of Your Digital Presence
+        </h2>
+        <p class="mt-2 mb-2">
+          Ditch the constraints of third-party platforms. Own your website, own
+          your future. Here's how:
+        </p>
+
+        <ul class="flex flex-wrap gap-4 mt-6">
+          <li
+            class="flex-grow border bg-secondary bg-opacity-5 shadow-lg p-4 border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          >
+            <strong class="block mb-2 text-lg">Complete Control</strong>
+            <strong class="text-secondary">Your website, your rules.</strong>
+            Modify, upgrade, or change as you grow, free from platform
+            limitations and vendor lock-ins.
+          </li>
+          <li
+            class="flex-grow border p-4 bg-primary bg-opacity-5 shadow-lg border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          >
+            <strong class="block mb-2 text-lg">Growth-Ready</strong>
+            <strong class="text-primary">Evolve</strong> your website in tandem
+            with your business needs,
+            <strong class="text-primary">without starting from scratch</strong>
+          </li>
+          <li
+            class="flex-grow border p-4 bg-secondary bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          >
+            <strong class="block mb-2 text-lg">Vendor Independence</strong>
+            <strong class="text-secondary">Break free</strong> from the confines
+            of platforms like Wix.
+            <strong class="text-secondary">Embrace design freedom</strong>,
+            enhanced functionality, and portability.
+          </li>
+          <!-- More list items here -->
+        </ul>
+
+        <a class="btn btn-accent mt-6" href="#contact-form">Contact me!</a>
+      </section>
+    </div>
+  </div>
+  <!-- Packages Section -->
+  <section id="packages" class="bg-base-200 py-20">
+    <div class="container text-center sm:text-left md:text-center">
+      <h2 class="font-heading text-4xl font-bold">New Website Packages</h2>
       <p class="mt-2 mb-2">
         Ditch the constraints of third-party platforms. Own your website, own
         your future. Here's how:
       </p>
+    </div>
 
-      <ul class="flex flex-wrap gap-4 mt-6">
-        <li
-          class="flex-grow border bg-secondary bg-opacity-5 shadow-lg p-4 border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
-        >
-          <strong class="block mb-2 text-lg">Complete Control</strong>
-          <strong class="text-secondary">Your website, your rules.</strong>
-          Modify, upgrade, or change as you grow, free from platform limitations
-          and vendor lock-ins.
-        </li>
-        <li
-          class="flex-grow border p-4 bg-primary bg-opacity-5 shadow-lg border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
-        >
-          <strong class="block mb-2 text-lg">Growth-Ready</strong>
-          <strong class="text-primary">Evolve</strong> your website in tandem
-          with your business needs,
-          <strong class="text-primary">without starting from scratch</strong>
-        </li>
-        <li
-          class="flex-grow border p-4 bg-secondary bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
-        >
-          <strong class="block mb-2 text-lg">Vendor Independence</strong>
-          <strong class="text-secondary">Break free</strong> from the confines
-          of platforms like Wix.
-          <strong class="text-secondary">Embrace design freedom</strong>,
-          enhanced functionality, and portability.
-        </li>
-        <!-- More list items here -->
-      </ul>
-
-      <a class="btn btn-accent mt-6" href="#contact-form">Contact me!</a>
-    </section>
-  </div>
-  <!-- Packages Section -->
-  <section id="packages" class="mt-10 bg-base-300 py-10">
-    <h2 class="container font-heading text-2xl font-bold text-primary">
-      New Website Packages
-    </h2>
-
-    <div class="container lg:max-w-[1200px] mt-10">
+    <div class="container lg:max-w-[1200px] mt-6 md:mt-12">
       <div
-        class="flex flex-row gap-4 sm:gap-2 mt-6 flex-wrap md:flex-nowrap justify-start lg:justify-center items-center"
+        class="flex flex-row gap-4 sm:gap-2 mt-6 flex-wrap md:flex-nowrap lg:justify-center items-center sm:items-stretch mb-4 sm:mb-2 justify-center"
       >
         <!-- Starter Package -->
         <Package
-          class="max-w-[400px] sm:max-w-[300px] md:scale-95 lg:scale-100 md:rotate-[-2deg] md:-mr-4 lg:mr-0"
+          class="max-w-[370px] sm:max-w-[300px] lg:max-w-[370px] md:scale-95 lg:scale-100 md:rotate-[-2deg] md:-mr-4 lg:mr-0"
           :packageName="'🌱 Starter Package'"
           :listItems="[
             'User-friendly WordPress',
@@ -134,7 +140,7 @@
 
         <!-- Growth Package -->
         <Package
-          class="max-w-[350px] sm:max-w-[300px] md: md:scale-105 lg:scale-110 z-10 md:-mr-4 lg:mr-0"
+          class="max-w-[370px] sm:max-w-[300px] lg:max-w-[370px] md: md:scale-105 lg:scale-110 z-10 md:-mr-4 lg:mr-0"
           :packageName="'🌟 Growth Package'"
           :listItems="[
             'Implemented based on your designs or wireframes',
@@ -156,7 +162,7 @@
 
         <!-- Expansion Package -->
         <Package
-          class="max-w-[350px] sm:max-w-[300px] lg:rotate-[2deg] md:scale-95 lg:scale-100 md:rotate-[2deg]"
+          class="max-w-[370px] sm:max-w-none sm:w-full lg:max-w-[370px] lg:rotate-[2deg] md:scale-95 lg:scale-100 md:rotate-[2deg]"
           :packageName="'🚀 Expansion Package'"
           :listItems="[
             'Advanced custom solutions',
@@ -180,17 +186,24 @@
 
       <!-- Custom Path -->
       <Package
-        class="max-w-[350px] sm:max-w-[300px] lg:mt-6"
+        class="max-w-[370px] sm:max-w-none sm:w-full md:max-w-[500px] md:mt-6 lg:mt-10 m-auto"
         :packageName="'✨ Custom Path'"
         :listItems="['Unique requirements or larger-scale projects.']"
+        :infoList="[
+          {
+            key: 'Fully bespoke',
+            value: 'Get in touch to talk about your project.',
+          },
+        ]"
+        :color="'accent'"
       />
     </div>
   </section>
 
-  <div class="container">
+  <div class="bg-base-300">
     <!-- Additional Services Section -->
-    <section id="additional-services">
-      <h2>Additional Services</h2>
+    <section id="additional-services" class="container py-20">
+      <h2 class="font-heading text-4xl font-bold">Additional Services</h2>
       <ul>
         <li>
           <strong>SEO Advice:</strong> Boost your site's visibility and draw
@@ -212,122 +225,127 @@
       </ul>
       <a href="#contact-form">Interested in our Additional Services?</a>
     </section>
-
     <!-- Why Choose Jaco Section -->
-    <section id="why-choose-jaco">
-      <h2>Why Choose Jaco?</h2>
-      <ul>
-        <li>
-          <strong>Beginner-Friendly:</strong> I offer clear, straightforward
-          guidance, making web development accessible for everyone.
-        </li>
-        <li>
-          <strong>Flexible Solutions:</strong> My services are tailored to adapt
-          and grow with your business, ensuring longevity and relevance.
-        </li>
-        <li>
-          <strong>Long-Term Support:</strong> You'll receive dedicated support
-          and hosting for 6 months, with the option for extended assistance.
-        </li>
-        <li>
-          <strong>Client-Centric Approach:</strong> Your needs and goals are at
-          the forefront of every decision, ensuring a solution that truly
-          reflects your vision.
-        </li>
-      </ul>
-    </section>
+    <div class="bg-base-100">
+      <section id="why-choose-jaco" class="container py-20">
+        <h2 class="font-heading text-4xl font-bold">Why Choose Jaco?</h2>
+        <ul>
+          <li>
+            <strong>Beginner-Friendly:</strong> I offer clear, straightforward
+            guidance, making web development accessible for everyone.
+          </li>
+          <li>
+            <strong>Flexible Solutions:</strong> My services are tailored to
+            adapt and grow with your business, ensuring longevity and relevance.
+          </li>
+          <li>
+            <strong>Long-Term Support:</strong> You'll receive dedicated support
+            and hosting for 6 months, with the option for extended assistance.
+          </li>
+          <li>
+            <strong>Client-Centric Approach:</strong> Your needs and goals are
+            at the forefront of every decision, ensuring a solution that truly
+            reflects your vision.
+          </li>
+        </ul>
+      </section>
+    </div>
 
-    <section id="process" class="mt-10">
-      <h2 class="font-heading text-2xl font-bold text-primary">
-        What does the process look like?
-      </h2>
-      <p class="mt-2 mb-2">
-        Here's a brief overview of the steps involved in creating your new
-        website, from start to finish.
-      </p>
-      <ul class="steps steps-vertical mt-2">
-        <li class="step step-secondary">Get in touch!</li>
-        <!-- We should probably add some info explaining each section. Perhaps collapsable like the faqs -->
-        <li class="step step-secondary">Arrange a call</li>
-        <li class="step">Development</li>
-        <li class="step">Feedback and adjustments</li>
-        <li class="step">Quality Assurance</li>
-        <li class="step">Launch</li>
-      </ul>
-    </section>
-
+    <div class="bg-base-200">
+      <section id="process" class="container py-20">
+        <h2 class="font-heading text-4xl font-bold">
+          What does the process look like?
+        </h2>
+        <p class="mt-2 mb-2">
+          Here's a brief overview of the steps involved in creating your new
+          website, from start to finish.
+        </p>
+        <ul class="steps steps-vertical mt-2">
+          <li class="step step-secondary">Get in touch!</li>
+          <!-- We should probably add some info explaining each section. Perhaps collapsable like the faqs -->
+          <li class="step step-secondary">Arrange a call</li>
+          <li class="step">Development</li>
+          <li class="step">Feedback and adjustments</li>
+          <li class="step">Quality Assurance</li>
+          <li class="step">Launch</li>
+        </ul>
+      </section>
+    </div>
     <!-- FAQ Section -->
-    <section id="faq" class="mt-10">
-      <h2 class="font-heading text-2xl font-bold text-primary">
-        Frequently Asked Questions (FAQ)
-      </h2>
-      <div class="join join-vertical w-full mt-4">
-        <div class="collapse collapse-arrow join-item border border-primary">
-          <input type="radio" name="my-accordion" checked="checked" />
-          <div class="collapse-title text-xl font-medium">
-            How do I get started with my new website?
+    <div class="bg-base-300">
+      <section id="faq" class="container py-20">
+        <h2 class="font-heading text-4xl font-bold">
+          Frequently Asked Questions
+        </h2>
+        <div class="join join-vertical w-full mt-4">
+          <div class="collapse collapse-arrow join-item border border-primary">
+            <input type="radio" name="my-accordion" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              How do I get started with my new website?
+            </div>
+            <div class="collapse-content">
+              <p>
+                <a href="#contact-form">Contact me</a> and we'll discuss your
+                needs to find the perfect package for you.
+              </p>
+            </div>
           </div>
-          <div class="collapse-content">
-            <p>
-              <a href="#contact-form">Contact me</a> and we'll discuss your
-              needs to find the perfect package for you.
-            </p>
+
+          <div class="collapse collapse-arrow join-item border border-primary">
+            <input type="radio" name="my-accordion" />
+            <div class="collapse-title text-xl font-medium">
+              Can I upgrade my website package in the future?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Absolutely! Your website can grow and evolve with your business.
+                You can even take your code with you to another developer.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow join-item border border-primary">
+            <input type="radio" name="my-accordion" />
+            <div class="collapse-title text-xl font-medium">
+              What kind of ongoing support do you offer?
+            </div>
+            <div class="collapse-content">
+              <p>
+                I provide 6 months of support and hosting with all my services,
+                with options for extended assistance.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow join-item border border-primary">
+            <input type="radio" name="my-accordion" />
+            <div class="collapse-title text-xl font-medium">
+              Do you provide training on how to use my new website?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Yes, I offer guidance to help you manage and update your site
+                confidently.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="collapse collapse-arrow join-item border border-primary">
-          <input type="radio" name="my-accordion" />
-          <div class="collapse-title text-xl font-medium">
-            Can I upgrade my website package in the future?
-          </div>
-          <div class="collapse-content">
-            <p>
-              Absolutely! Your website can grow and evolve with your business.
-              You can even take your code with you to another developer.
-            </p>
-          </div>
-        </div>
-
-        <div class="collapse collapse-arrow join-item border border-primary">
-          <input type="radio" name="my-accordion" />
-          <div class="collapse-title text-xl font-medium">
-            What kind of ongoing support do you offer?
-          </div>
-          <div class="collapse-content">
-            <p>
-              I provide 6 months of support and hosting with all my services,
-              with options for extended assistance.
-            </p>
-          </div>
-        </div>
-
-        <div class="collapse collapse-arrow join-item border border-primary">
-          <input type="radio" name="my-accordion" />
-          <div class="collapse-title text-xl font-medium">
-            Do you provide training on how to use my new website?
-          </div>
-          <div class="collapse-content">
-            <p>
-              Yes, I offer guidance to help you manage and update your site
-              confidently.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <p class="mt-2">Have more questions?</p>
-      <a class="btn btn-accent mt-4" href="#contact-form">Get in touch!</a>
-    </section>
-
+        <p class="mt-2">Have more questions?</p>
+        <a class="btn btn-accent mt-4" href="#contact-form">Get in touch!</a>
+      </section>
+    </div>
     <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Ready to start building your online presence with a website that’s
-        uniquely yours?
-      </p>
-      <a href="#contact-form">Contact me today</a>
-    </section>
+    <div class="bg-base-100">
+      <section id="contact" class="container py-20">
+        <h2 class="font-heading text-4xl font-bold">Contact</h2>
+        <p>
+          Ready to start building your online presence with a website that’s
+          uniquely yours?
+        </p>
+        <a href="#contact-form">Contact me today</a>
+      </section>
+    </div>
   </div>
   <!-- End of Main Content -->
 </template>

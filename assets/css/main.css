@@ -3,11 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   html {
-    /* @apply text-gray-700; */
+    @apply text-gray-700;
   }
-}
+} */
 
 .tick-list li {
   list-style: none; /* Removes default list style */

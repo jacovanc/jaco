@@ -11,7 +11,7 @@ export default {
   safelist: [
     // Safelist classes that include 'primary' in their names
     {
-      pattern: /gray/,
+      pattern: /accent|primary|secondary/, // This is needed for the dynamic color class on the custom package
     },
   ],
   theme: {
@@ -19,10 +19,11 @@ export default {
       fontFamily: {
         sans: ["Open Sans", "sans-serif"], // For body text
         heading: ["Montserrat", "sans-serif"], // For headings
+        // heading: ["Open Sans", "sans-serif"], // For headings
       },
 
       colors: {
-        neutral: "#FDFEFE", // Off-White
+        neutral: "#ff0000", // Off-White
       },
     },
 
@@ -46,15 +47,34 @@ export default {
   },
   daisyui: {
     themes: [
+      // "synthwave",
+      // "retro",
+      // "valentine",
+      // "lofi",
+      // "pastel",
+      // "black",
+      // "dracula",
+      // "autumn",
+      // "business",
+      // "winter",
+      // "dim",
+      // "sunset",
       // "cmyk",
       // "night",
       // "nord",
       {
         mytheme: {
-          ...require("daisyui/src/theming/themes")["nord"],
-          primary: "#2980B9",
+          // ...require("daisyui/src/theming/themes")["synthwave"], // Dark mode?
+          // ...require("daisyui/src/theming/themes")["dracula"], // Dark mode?
+          // ...require("daisyui/src/theming/themes")["nord"], // Light mode?
+          // ...require("daisyui/src/theming/themes")["dim"], // Dark mode?
+          ...require("daisyui/src/theming/themes")["winter"], // Light Mode?
+          // ...require("daisyui/src/theming/themes")["light"], // Light mode
+          // primary: "#2980B9",
+          primary: "#003478",
           "primary-content": "#FDFEFE",
-          secondary: "#1ABC9C",
+          // secondary: "#1ABC9C",
+          secondary: "#008264",
           "secondary-content": "#FDFEFE",
           accent: "#E67E22",
           "accent-content": "#FDFEFE",
@@ -65,12 +85,15 @@ export default {
           warning: "#ff9900",
           error: "#ff5724",
 
-          neutral: "#FDFEFE",
-          "base-100": "#FDFEFE",
-          "base-200": "#D6E4FF",
-          "base-300": "#ffe8ed",
+          // "base-content": "#4B5563",
+          // "base-100": "#FDFEFE",
+          // "base-100-content": "#ff0000",
+          // "base-200": "#D6E4FF",
+          // "base-200-content": "#FFFFFF",
+          // "base-300": "#ffe8ed",
+          // "base-300-content": "#FFFFFF",
 
-          "--border-btn": "2px",
+          // "--border-btn": "2px",
         },
       },
       // other built-in themes...
