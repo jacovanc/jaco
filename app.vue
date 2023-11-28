@@ -2,56 +2,61 @@
   <!-- Header -->
   <header id="header" class="container"></header>
   <!-- Main Content -->
-  <div id="main-content" class="container p-4">
-    <!-- Hero Section -->
-    <section id="hero" class="">
-      <!-- Opening Statement -->
-      <!-- <h1 class="text-2xl font-heading font-bold text-primary">
+  <!-- Hero Section -->
+  <section
+    id="hero"
+    class="flex items-center justify-center bg-base-200 h-screen min-h-[700px] max-h-[820px] sm:min-h-[540px] sm:max-h-[450px] py-20"
+  >
+    <!-- Opening Statement -->
+    <!-- <h1 class="text-2xl font-heading font-bold text-primary">
         Empower Your Business to Fully Own Its Digital Presence
       </h1> -->
 
-      <!-- Introduction -->
-      <div
-        class="mt-10 sm:flex sm:flex-row sm:items-center sm:gap-6 sm:justify-center"
-      >
-        <div>
-          <div class="w-96 max-w-full sm:w-72 md:w-80">
-            <!-- <div
+    <!-- Introduction -->
+    <div
+      class="container max-w-full w-96 sm:w-full sm:flex sm:flex-row sm:items-center sm:gap-6 sm:justify-center"
+    >
+      <div>
+        <div class="w-96 max-w-full sm:w-72 md:w-80">
+          <!-- <div
               class="mb-3 mx-auto overflow-hidden rounded-2xl shadow-lg max-w-full relative pt-[100%]"
             > -->
-            <div
-              class="mb-3 mx-auto overflow-hidden mask mask-squircle shadow-lg max-w-full relative pt-[100%]"
-            >
-              <img
-                src="~/assets/images/me.jpg"
-                alt="Jaco's Portrait"
-                class="absolute top-0 left-0 w-full h-full object-cover"
-              />
-            </div>
+          <div
+            class="mb-3 mx-auto overflow-hidden mask mask-squircle shadow-lg max-w-full relative pt-[100%]"
+          >
+            <img
+              src="~/assets/images/me.jpg"
+              alt="Jaco's Portrait"
+              class="absolute top-0 left-0 w-full h-full object-cover"
+            />
           </div>
+        </div>
 
+        <div class="sm:h-0">
           <div
             class="bg-white rounded p-2 inline-block relative ml-10 shadow-lg speech-bubble"
           >
             <p class="text-xl font-sans font-bold">Hi, I'm Jaco! 👋</p>
           </div>
         </div>
-        <div class="sm:pb-6 w-80 md:w-96 max-w-full">
-          <h2 class="text-2xl font-sans font-bold">
-            Your <span class="text-secondary">Web Specialist</span> committed to
-            helping you succeed online
-          </h2>
-          <p class="mt-2">
-            Don't just settle for a website. Build a
-            <span class="text-secondary font-bold">digital presence</span> that
-            you
-            <span class="text-secondary font-bold">fully own.</span>
-          </p>
-          <a class="btn btn-accent mt-4" href="#packages">View Packages</a>
-        </div>
       </div>
-    </section>
+      <div class="sm:pb-6 w-80 md:w-96 max-w-full">
+        <h2 class="text-2xl font-sans font-bold">
+          Your <span class="text-secondary">Web Specialist</span> committed to
+          helping you succeed online
+        </h2>
+        <p class="mt-2">
+          Don't just settle for a website. Build a
+          <span class="text-secondary font-bold">digital presence</span> that
+          you
+          <span class="text-secondary font-bold">fully own.</span>
+        </p>
+        <a class="btn btn-accent mt-6" href="#packages">View Packages</a>
+      </div>
+    </div>
+  </section>
 
+  <div id="main-content" class="container py-4">
     <!-- Digital Presence Section -->
     <section id="digital-presence" class="mt-10">
       <h2 class="font-heading text-2xl font-bold text-primary">
@@ -91,82 +96,92 @@
         <!-- More list items here -->
       </ul>
 
-      <a class="btn btn-accent mt-4" href="#contact-form">Contact me!</a>
+      <a class="btn btn-accent mt-6" href="#contact-form">Contact me!</a>
     </section>
+  </div>
+  <!-- Packages Section -->
+  <section id="packages" class="mt-10 bg-base-300 py-10">
+    <div class="container md:max-w-[800px] lg:max-w-[1000px]">
+      <h2 class="font-heading text-2xl font-bold text-primary">
+        New Website Packages
+      </h2>
 
-    <!-- Packages Section -->
-    <section id="packages" class="mt-10">
-      <h2>New Website Packages</h2>
+      <div class="flex flex-col gap-4 mt-6">
+        <!-- Starter Package -->
+        <Package
+          :packageName="'🌱 Starter Package'"
+          :listItems="[
+            'User-friendly WordPress',
+            'Use an existing theme',
+            'Deployed and ready for your content',
+          ]"
+          :infoList="[
+            {
+              key: 'Support',
+              value: '6 months ongoing support & hosting included.',
+            },
+            {
+              key: 'Ideal For',
+              value:
+                'New online ventures; personal sites, small businesses, basic e-commerce.',
+            },
+          ]"
+          :price="'£1500'"
+        />
 
-      <!-- Starter Package -->
-      <div class="package">
-        <h3>🌱 Starter Package</h3>
-        <p><strong>Price:</strong> Starting at £1500</p>
-        <ul>
-          <li>User-friendly WordPress</li>
-          <li>Use an existing theme</li>
-          <li>Deployed and ready for your content</li>
-        </ul>
-        <p>
-          <strong>Support:</strong> 6 months ongoing support & hosting included.
-        </p>
-        <p>
-          <strong>Ideal For:</strong> New online ventures – personal sites,
-          small businesses, basic e-commerce.
-        </p>
-        <a href="#contact-form">Begin your journey</a>
+        <!-- Growth Package -->
+        <Package
+          :packageName="'🌟 Growth Package'"
+          :listItems="[
+            'Implemented based on your designs or wireframes',
+            'Performant custom theme for your needs',
+          ]"
+          :infoList="[
+            {
+              key: 'Support',
+              value: '6 months ongoing support & hosting included.',
+            },
+            {
+              key: 'Ideal For',
+              value: 'Businesses ready to make a unique digital statement.',
+            },
+          ]"
+          :price="'£4000'"
+          :color="'secondary'"
+        />
+
+        <!-- Expansion Package -->
+        <Package
+          :packageName="'🚀 Expansion Package'"
+          :listItems="[
+            'Advanced custom solutions',
+            'SPA/PWA',
+            'Any bespoke functionalities.',
+          ]"
+          :infoList="[
+            {
+              key: 'Support',
+              value: '6 months ongoing support & hosting included.',
+            },
+            {
+              key: 'Ideal For',
+              value:
+                'Businesses looking for sophisticated, high-end web solutions.',
+            },
+          ]"
+          :price="'£6000'"
+        />
+
+        <!-- Custom Path -->
+        <Package
+          :packageName="'✨ Custom Path'"
+          :listItems="['Unique requirements or larger-scale projects.']"
+        />
       </div>
+    </div>
+  </section>
 
-      <!-- Growth Package -->
-      <div class="package">
-        <h3>🌟 Growth Package</h3>
-        <p><strong>Price:</strong> Starting at £4000</p>
-        <ul>
-          <li>Implemented based on your designs or wireframes</li>
-          <li>Performant custom theme for your needs</li>
-        </ul>
-        <p>
-          <strong>Support:</strong> 6 months ongoing support & hosting included.
-        </p>
-        <p>
-          <strong>Ideal For:</strong> Businesses ready to make a unique digital
-          statement.
-        </p>
-        <a href="#contact-form">Grow with us</a>
-      </div>
-
-      <!-- Expansion Package -->
-      <div class="package">
-        <h3>🚀 Expansion Package</h3>
-        <p><strong>Price:</strong> Starting at £5500</p>
-        <ul>
-          <li>Advanced custom solutions</li>
-          <li>SPA/PWA</li>
-          <li>Any bespoke functionalities.</li>
-        </ul>
-        <p>
-          <strong>Support:</strong> 6 months ongoing support & hosting included.
-        </p>
-        <p>
-          <strong>Ideal For:</strong> Businesses looking for sophisticated,
-          high-end web solutions.
-        </p>
-        <a href="#contact-form">Expand your horizons</a>
-      </div>
-
-      <!-- Custom Path -->
-      <div class="custom-path">
-        <h3>✨ Custom Path</h3>
-        <p>
-          <strong>For:</strong> Unique requirements or larger-scale projects.
-        </p>
-        <p>
-          <strong>Support:</strong> 6 months ongoing support & hosting included.
-        </p>
-        <a href="#contact-form">Craft your path</a>
-      </div>
-    </section>
-
+  <div class="container">
     <!-- Additional Services Section -->
     <section id="additional-services">
       <h2>Additional Services</h2>

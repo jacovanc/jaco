@@ -8,6 +8,12 @@ export default {
     "./app.vue",
     "./error.vue",
   ],
+  safelist: [
+    // Safelist classes that include 'primary' in their names
+    {
+      pattern: /gray/,
+    },
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -30,10 +36,12 @@ export default {
         // xl: "1140px", // On extra large screens, max width is 1140px.
       },
     },
+
     screens: {
       tn: "440px",
       sm: "640px",
       md: "840px",
+      lg: "1024px",
     },
   },
   daisyui: {
@@ -57,9 +65,10 @@ export default {
           warning: "#ff9900",
           error: "#ff5724",
 
-          // neutral: "#FDFEFE",
+          neutral: "#FDFEFE",
           "base-100": "#FDFEFE",
-          // other colors...
+          "base-200": "#D6E4FF",
+          "base-300": "#ffe8ed",
 
           "--border-btn": "2px",
         },
