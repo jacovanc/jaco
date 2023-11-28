@@ -70,8 +70,8 @@ export default {
           // ...require("daisyui/src/theming/themes")["dim"], // Dark mode?
           ...require("daisyui/src/theming/themes")["winter"], // Light Mode?
           // ...require("daisyui/src/theming/themes")["light"], // Light mode
-          // primary: "#2980B9",
-          primary: "#003478",
+          primary: "#2980B9",
+          // primary: "#003478",
           "primary-content": "#FDFEFE",
           // secondary: "#1ABC9C",
           secondary: "#008264",

@@ -43,7 +43,7 @@
             color ? `bg-white` : 'bg-secondary',
             color ? `text-${color}` : 'text-white',
           ]"
-          href="#contact-form"
+          href="#contact"
           >Enquire</a
         >
       </div>
@@ -53,7 +53,7 @@
 
 <script>
 export default {
-  name: "PackageComponent",
+  name: "Package",
   props: {
     packageName: String,
     listItems: Array,

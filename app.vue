@@ -97,7 +97,7 @@
           <!-- More list items here -->
         </ul>
 
-        <a class="btn btn-accent mt-6" href="#contact-form">Contact me!</a>
+        <a class="btn btn-accent mt-6" href="#contact">Contact me!</a>
       </section>
     </div>
   </div>
@@ -200,56 +200,35 @@
     </div>
   </section>
 
-  <div class="bg-base-300">
+  <div class="bg-base-100">
     <!-- Additional Services Section -->
     <section id="additional-services" class="container py-20">
       <h2 class="font-heading text-4xl font-bold">Additional Services</h2>
-      <ul>
+      <p class="mt-2 mb-2">
+        I'm here to help you get the most out of your website.
+      </p>
+      <ul class="tick-list mt-6">
         <li>
-          <strong>SEO Advice:</strong> Boost your site's visibility and draw
-          more traffic with expert SEO strategies.
+          <strong class="text-secondary">SEO Advice:</strong> Boost your site's
+          visibility and draw more traffic with expert SEO strategies.
         </li>
         <li>
-          <strong>Content Creation:</strong> Captivate your audience with
-          professionally crafted content that resonates with your brand's voice.
+          <strong class="text-secondary">Content Creation:</strong> Captivate
+          your audience with professionally crafted content that resonates with
+          your brand's voice.
         </li>
         <li>
-          <strong>Website Maintenance:</strong> Keep your site running smoothly
-          with regular updates and maintenance.
+          <strong class="text-secondary">Website Maintenance:</strong> Keep your
+          site running smoothly with regular updates and maintenance.
         </li>
         <li>
-          <strong>Advanced Analytics Setup:</strong> Gain valuable insights into
-          your site's performance and user behavior, by tracking specific
-          interactions.
+          <strong class="text-secondary">Advanced Analytics Setup:</strong> Gain
+          valuable insights into your site's performance and user behavior, by
+          tracking specific interactions.
         </li>
       </ul>
-      <a href="#contact-form">Interested in our Additional Services?</a>
+      <a class="btn btn-accent mt-6" href="#contact">Discuss with me</a>
     </section>
-    <!-- Why Choose Jaco Section -->
-    <div class="bg-base-100">
-      <section id="why-choose-jaco" class="container py-20">
-        <h2 class="font-heading text-4xl font-bold">Why Choose Jaco?</h2>
-        <ul>
-          <li>
-            <strong>Beginner-Friendly:</strong> I offer clear, straightforward
-            guidance, making web development accessible for everyone.
-          </li>
-          <li>
-            <strong>Flexible Solutions:</strong> My services are tailored to
-            adapt and grow with your business, ensuring longevity and relevance.
-          </li>
-          <li>
-            <strong>Long-Term Support:</strong> You'll receive dedicated support
-            and hosting for 6 months, with the option for extended assistance.
-          </li>
-          <li>
-            <strong>Client-Centric Approach:</strong> Your needs and goals are
-            at the forefront of every decision, ensuring a solution that truly
-            reflects your vision.
-          </li>
-        </ul>
-      </section>
-    </div>
 
     <div class="bg-base-200">
       <section id="process" class="container py-20">
@@ -271,79 +250,129 @@
         </ul>
       </section>
     </div>
+
+    <!-- Why Choose Jaco Section -->
+    <div class="bg-base-100">
+      <section id="why-choose-jaco" class="container py-20">
+        <h2 class="font-heading text-4xl font-bold">Why choose me?</h2>
+        <ul class="tick-list mt-6">
+          <li>
+            <strong class="text-secondary">Beginner-Friendly:</strong> I offer
+            clear, straightforward guidance, making web development accessible
+            for everyone.
+          </li>
+          <li>
+            <strong class="text-secondary">Flexible Solutions:</strong> My
+            services are tailored to adapt and grow with your business, ensuring
+            longevity and relevance.
+          </li>
+          <li>
+            <strong class="text-secondary">Long-Term Support:</strong> You'll
+            receive dedicated support and hosting for 6 months, with the option
+            for extended assistance.
+          </li>
+          <li>
+            <strong class="text-secondary">Client-Centric Approach:</strong>
+            Your needs and goals are at the forefront of every decision,
+            ensuring a solution that truly reflects your vision.
+          </li>
+        </ul>
+      </section>
+    </div>
+
     <!-- FAQ Section -->
-    <div class="bg-base-300">
+    <div class="bg-base-200">
       <section id="faq" class="container py-20">
         <h2 class="font-heading text-4xl font-bold">
           Frequently Asked Questions
         </h2>
-        <div class="join join-vertical w-full mt-4">
-          <div class="collapse collapse-arrow join-item border border-primary">
-            <input type="radio" name="my-accordion" checked="checked" />
-            <div class="collapse-title text-xl font-medium">
-              How do I get started with my new website?
-            </div>
-            <div class="collapse-content">
-              <p>
-                <a href="#contact-form">Contact me</a> and we'll discuss your
-                needs to find the perfect package for you.
-              </p>
-            </div>
-          </div>
-
-          <div class="collapse collapse-arrow join-item border border-primary">
-            <input type="radio" name="my-accordion" />
-            <div class="collapse-title text-xl font-medium">
-              Can I upgrade my website package in the future?
-            </div>
-            <div class="collapse-content">
-              <p>
-                Absolutely! Your website can grow and evolve with your business.
-                You can even take your code with you to another developer.
-              </p>
-            </div>
-          </div>
-
-          <div class="collapse collapse-arrow join-item border border-primary">
-            <input type="radio" name="my-accordion" />
-            <div class="collapse-title text-xl font-medium">
-              What kind of ongoing support do you offer?
-            </div>
-            <div class="collapse-content">
-              <p>
-                I provide 6 months of support and hosting with all my services,
-                with options for extended assistance.
-              </p>
-            </div>
-          </div>
-
-          <div class="collapse collapse-arrow join-item border border-primary">
-            <input type="radio" name="my-accordion" />
-            <div class="collapse-title text-xl font-medium">
-              Do you provide training on how to use my new website?
-            </div>
-            <div class="collapse-content">
-              <p>
-                Yes, I offer guidance to help you manage and update your site
-                confidently.
-              </p>
-            </div>
-          </div>
-        </div>
+        <FAQAccordion
+          :faqItems="[
+            {
+              question: 'How do I get started with my new website?',
+              answer:
+                'Contact me and we\'ll discuss your needs to find the perfect package for you.',
+            },
+            {
+              question: 'Can I upgrade my website package in the future?',
+              answer:
+                'Absolutely! Your website can grow and evolve with your business...',
+            },
+            {
+              question: 'What kind of ongoing support do you offer?',
+              answer:
+                'I provide 6 months of support and hosting with all my services...',
+            },
+            {
+              question: 'Do you provide training on how to use my new website?',
+              answer:
+                'Yes, I offer guidance to help you manage and update your site confidently.',
+            },
+          ]"
+        />
 
         <p class="mt-2">Have more questions?</p>
-        <a class="btn btn-accent mt-4" href="#contact-form">Get in touch!</a>
+        <a class="btn btn-accent mt-4" href="#contact">Get in touch!</a>
       </section>
     </div>
+
     <!-- Contact Section -->
     <div class="bg-base-100">
       <section id="contact" class="container py-20">
-        <h2 class="font-heading text-4xl font-bold">Contact</h2>
-        <p>
-          Ready to start building your online presence with a website that’s
-          uniquely yours?
+        <h2 class="font-heading text-4xl font-bold">
+          Let me know what you're thinking!
+        </h2>
+        <p class="mt-2">
+          Send me your questions, needs, or just say hi! I'd love to hear from
+          you.
         </p>
-        <a href="#contact-form">Contact me today</a>
+        <form
+          class="p-6 rounded-lg shadow-lg bg-base-200 bg-opacity-100 mb-20 mt-6"
+        >
+          <div class="form-control w-full">
+            <label class="label" for="name">
+              <span class="label-text">Name</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Your name"
+              class="input input-bordered w-full border-primary"
+              required
+            />
+          </div>
+
+          <div class="form-control w-full mt-4">
+            <label class="label" for="email">
+              <span class="label-text">Email</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email"
+              class="input input-bordered w-full border-primary"
+              required
+            />
+          </div>
+
+          <div class="form-control w-full mt-4">
+            <label class="label" for="message">
+              <span class="label-text">Message</span>
+            </label>
+            <textarea
+              id="message"
+              placeholder="Hey Jaco..."
+              class="textarea textarea-bordered h-24 border-primary"
+              required
+            ></textarea>
+          </div>
+
+          <div class="mt-6">
+            <button type="submit" class="btn btn-accent w-auto">
+              Send Message
+            </button>
+          </div>
+        </form>
       </section>
     </div>
   </div>
