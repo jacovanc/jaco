@@ -18,6 +18,9 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/image", "@nuxtseo/module"],
+  ogImage: {
+    runtimeBrowser: true,
+  },
   site: {
     url: process.env.BASE_URL,
     name: "Jaco - Web Specialist",
