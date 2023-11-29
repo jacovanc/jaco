@@ -61,7 +61,7 @@ export default {
     price: String,
     color: {
       type: String,
-      default: false,
+      default: "",
     },
   },
 };
