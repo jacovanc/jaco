@@ -65,7 +65,7 @@
         </h2>
         <p class="mt-2 mb-2">
           Ditch the constraints of third-party platforms. Own your website, own
-          your future. Here's how:
+          your future.
         </p>
 
         <ul class="flex flex-wrap gap-4 mt-6">

@@ -1,28 +1,38 @@
-// server/api/contact.ts
-import { defineEventHandler } from "h3";
+import { defineEventHandler, createError } from "h3";
 import mailgun from "mailgun-js";
 import validator from "validator";
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
 
-  // Sanitize inputs
-  const name = validator.escape(body.name);
-  const email = validator.escape(body.email);
-  const message = validator.escape(body.message);
+  // Add testing delay
+  // await new Promise((resolve) => setTimeout(resolve, 5000));
 
-  // Validate email
-  if (!validator.isEmail(email)) {
+  // Validate inputs
+  const errors = {};
+  if (!body.name || validator.isEmpty(body.name)) {
+    errors.name = "Name is required.";
+  }
+  if (!body.email || validator.isEmpty(body.email)) {
+    errors.email = "Email is required.";
+  } else if (!validator.isEmail(body.email)) {
+    errors.email = "Email is not valid.";
+  }
+  if (!body.message || validator.isEmpty(body.message)) {
+    errors.message = "Message is required.";
+  }
+
+  // If there are validation errors, return them
+  if (Object.keys(errors).length > 0) {
     return createError({
       statusCode: 400,
-      statusMessage: "Invalid email address",
+      statusMessage: "Validation errors",
+      data: errors,
     });
   }
 
+  // Setup Mailgun
   const config = useRuntimeConfig();
-  console.log(
-    config.private.mailgunApiKey + " " + config.private.mailgunDomain
-  );
   const mg = mailgun({
     apiKey: config.private.mailgunApiKey,
     domain: config.private.mailgunDomain,
@@ -30,10 +40,10 @@ export default defineEventHandler(async (event) => {
   });
 
   const data = {
-    from: "Website Enquiry <contact@jacovan.co.uk>",
+    from: "Website Contact Request <contact@jacovan.co.uk>",
     to: "jaco@vancran.com",
-    subject: `New Message from ${name}`,
-    text: `You have received a new message:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    subject: `New Message from ${body.name}`,
+    text: `You have received a new message:\n\nName: ${body.name}\nEmail: ${body.email}\nMessage: ${body.message}`,
   };
 
   try {

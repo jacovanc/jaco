@@ -81,7 +81,7 @@ export default {
 
           // info: "#3498DB",
           info: "#1c92f2",
-          success: "#009485",
+          success: "#22c55e",
           warning: "#ff9900",
           error: "#ff5724",
 
