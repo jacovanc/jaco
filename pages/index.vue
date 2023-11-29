@@ -3,7 +3,8 @@ defineOgImageScreenshot({
   cache: false,
   selector: "#og_image_screenshot",
   alt: "Social Share image for Jaco's website",
-  delay: 2000,
+  delay: 5000,
+  cacheKey: `index_invalidate_id_1`, // Increment this value to invalidate the cache
 });
 </script>
 
