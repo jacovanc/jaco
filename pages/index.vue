@@ -163,7 +163,7 @@ defineOgImageScreenshot({
 
         <!-- Growth Package -->
         <Package
-          class="max-w-[370px] sm:max-w-[300px] lg:max-w-[370px] md: md:scale-105 lg:scale-110 z-10 md:-mr-4 lg:mr-0"
+          class="max-w-[370px] sm:max-w-[300px] lg:max-w-[370px] md:scale-105 lg:scale-110 z-10 md:-mr-4 lg:mr-0"
           :packageName="'🌟 Growth Package'"
           :listItems="[
             'Implemented based on your designs or wireframes',
@@ -185,7 +185,7 @@ defineOgImageScreenshot({
 
         <!-- Expansion Package -->
         <Package
-          class="max-w-[370px] sm:max-w-none sm:w-full lg:max-w-[370px] lg:rotate-[2deg] md:scale-95 lg:scale-100 md:rotate-[2deg]"
+          class="max-w-[370px] sm:max-w-none sm:w-full md:max-w-[300px] md:w-auto lg:max-w-[370px] md:scale-95 lg:scale-100 md:rotate-[2deg]"
           :packageName="'🚀 Expansion Package'"
           :listItems="[
             'Advanced custom solutions',
@@ -355,6 +355,7 @@ defineOgImageScreenshot({
           Frequently Asked Questions
         </h2>
         <FAQAccordion
+          class="mt-6"
           :faqItems="[
             {
               question: 'How do I get started with my new website?',
@@ -379,8 +380,8 @@ defineOgImageScreenshot({
           ]"
         />
 
-        <p class="mt-2">Have more questions?</p>
-        <a class="btn btn-accent mt-4" href="#contact">Get in touch!</a>
+        <p class="my-3">Have more questions?</p>
+        <a class="btn btn-accent" href="#contact">Get in touch!</a>
       </section>
     </div>
 

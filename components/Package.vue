@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <div
-      class="package w-full border rounded-lg shadow-lg flex flex-row flex-wrap overflow-hidden"
+      class="package w-full border rounded-lg shadow-lg flex flex-row flex-wrap overflow-hidden sm:h-full md:h-auto"
       :class="[color ? `border-t border-${color}` : 'border-neutral']"
     >
       <div class="section p-4 sm:w-[250px] flex-grow lg:flex-nogrow">
