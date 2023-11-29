@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 defineOgImageScreenshot({
-    cache: false,
-    selector: "#og_image_screenshot",
-    alt: "Social Share image for Jaco's website",
-    delay: 2000,
+  cache: false,
+  selector: "#og_image_screenshot",
+  alt: "Social Share image for Jaco's website",
+  delay: 2000,
 });
 </script>
 
@@ -44,7 +44,7 @@ defineOgImageScreenshot({
           <div
             class="bg-white rounded p-2 inline-block relative ml-10 shadow-lg speech-bubble"
           >
-            <p class="text-xl font-sans font-bold">Hi, I'm Jaco! &#x1F44B</p>
+            <p class="text-xl font-sans font-bold">Hi, I'm Jaco! &#x1F44B;</p>
           </div>
         </div>
       </div>
@@ -63,9 +63,8 @@ defineOgImageScreenshot({
       </div>
     </div>
   </section>
-
-  <div class="">
-    <section id="introduction" class="container pt-20">
+  <div class="bg-base-100">
+    <section id="introduction" class="container py-20">
       <h2 class="font-heading text-4xl font-bold">
         Clear introduction statement about me and what I do
       </h2>
@@ -76,7 +75,8 @@ defineOgImageScreenshot({
         voluptatum.
       </p>
     </section>
-
+  </div>
+  <div class="bg-base-200">
     <!-- Digital Presence Section -->
     <section id="digital-presence" class="container py-20">
       <h2 class="font-heading text-4xl font-bold">
@@ -124,7 +124,7 @@ defineOgImageScreenshot({
     </section>
   </div>
   <!-- Packages Section -->
-  <section id="packages" class="bg-base-200 py-20">
+  <section id="packages" class="bg-base-100 pt-20">
     <div class="container text-center sm:text-left md:text-center">
       <h2 class="font-heading text-4xl font-bold">New Website Packages</h2>
       <p class="mt-2 mb-2">
@@ -158,6 +158,7 @@ defineOgImageScreenshot({
             },
           ]"
           :price="'£1500'"
+          :color="'primary'"
         />
 
         <!-- Growth Package -->
@@ -203,6 +204,7 @@ defineOgImageScreenshot({
             },
           ]"
           :price="'£6000'"
+          :color="'accent'"
         />
       </div>
 
@@ -217,7 +219,6 @@ defineOgImageScreenshot({
             value: 'Get in touch to talk about your project.',
           },
         ]"
-        :color="'accent'"
       />
     </div>
   </section>
@@ -265,8 +266,13 @@ defineOgImageScreenshot({
           <li class="step step-secondary items-start">
             <p class="text-left text-sm ml-2 my-2">
               <span class="font-bold text-xl">Get in touch!</span> <br />
-              Contact me to arrange a video call, where we will discuss your
-              needs in detail
+              <a
+                class="btn btn-primary btn-outline btn-sm mt-1 mr-[2px]"
+                href="#contact"
+                >Contact me</a
+              >
+              to arrange a video call, where we will discuss your needs in
+              detail
             </p>
           </li>
           <!-- We should probably add some info explaining each section. Perhaps collapsable like the faqs -->
@@ -282,8 +288,8 @@ defineOgImageScreenshot({
             <p class="text-left text-sm ml-2 my-2">
               <span class="font-bold text-xl">Development</span>
               <br />
-              Once you're happy with the proposal, I'll send you a contract and
-              kick start the development process.
+              Once you're happy with the proposal, I'll kick start the
+              development process.
             </p>
           </li>
           <li class="step step-secondary">

@@ -22,9 +22,9 @@ export default {
         // heading: ["Open Sans", "sans-serif"], // For headings
       },
 
-      colors: {
-        neutral: "#ff0000", // Off-White
-      },
+      // colors: {
+      //   neutral: "#ff0000", // Off-White
+      // },
     },
 
     container: {
@@ -78,6 +78,7 @@ export default {
           "secondary-content": "#FDFEFE",
           accent: "#E67E22",
           "accent-content": "#FDFEFE",
+          neutral: "gray",
 
           // info: "#3498DB",
           info: "#1c92f2",
