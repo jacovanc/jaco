@@ -21,6 +21,11 @@ export default defineNuxtConfig({
   ogImage: {
     runtimeBrowser: true,
   },
+  nitro: {
+    prerender: {
+      crawlLinks: true, // recommended
+    },
+  },
   site: {
     url: process.env.BASE_URL,
     name: "Jaco - Web Specialist",
