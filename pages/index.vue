@@ -48,7 +48,7 @@ defineOgImageScreenshot({
         </div>
       </div>
       <div class="sm:pb-6 w-80 md:w-96 max-w-full" id="sub-hero">
-        <h2 class="text-3xl font-sans font-bold">
+        <h2 class="text-3xl sm:text-xl md:text-3xl font-sans font-bold">
           Your <span class="text-secondary">Web Specialist</span> committed to
           helping you succeed online
         </h2>
