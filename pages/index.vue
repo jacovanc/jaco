@@ -64,31 +64,51 @@ defineOgImageScreenshot({
       </div>
     </div>
   </section>
-  <div class="bg-base-100">
+  <!-- <div class="bg-base-100">
     <section id="introduction" class="container py-20">
-      <h2 class="font-heading text-4xl font-bold">
-        Clear introduction statement about me and what I do
+      <h2
+        class="font-heading text-4xl font-bold text-center w-[30rem] m-auto max-w-full md:w-full"
+      >
+        <span class="text-primary">Your Website</span>
+        should belong
+        <span class="inline-block"
+          >to
+          <span class="text-white font-extrabold bg-primary px-2"
+            >you.</span
+          ></span
+        >
       </h2>
-      <p class="mt-2 mb-2">
-        Brief but clear introduction statement about me and what I do. Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-        voluptatum.
+      <p
+        class="mb-2 text-center mt-4 md:w-[39rem] w-[22rem] max-w-full block m-auto"
+      >
+        Your website is the digital face of your business. It's the first step
+        in building a relationship with your customers.
       </p>
     </section>
-  </div>
-  <div class="bg-base-200">
+  </div> -->
+  <div class="bg-base-100">
     <!-- Digital Presence Section -->
     <section id="digital-presence" class="container py-20">
-      <h2 class="font-heading text-4xl font-bold">
-        Take Charge of Your Digital Presence
+      <h2
+        class="font-heading text-4xl font-bold text-center w-[30rem] m-auto max-w-full md:w-full"
+      >
+        <span class="text-primary">Your Website</span>
+        should belong
+        <span class="inline-block"
+          >to
+          <span class="text-white font-extrabold bg-primary px-2"
+            >you.</span
+          ></span
+        >
       </h2>
-      <p class="mt-2 mb-2">
-        Ditch the constraints of third-party platforms. Own your website, own
-        your future.
+      <p
+        class="mb-2 text-center mt-4 md:w-[39rem] w-[22rem] max-w-full block m-auto"
+      >
+        Your website is the digital face of your business. It's the first step
+        in building a relationship with your customers.
       </p>
 
-      <ul class="flex flex-wrap gap-4 mt-6">
+      <ul class="flex flex-wrap gap-4 mt-10">
         <li
           class="flex-grow border bg-secondary bg-opacity-5 shadow-lg p-4 border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
@@ -125,16 +145,25 @@ defineOgImageScreenshot({
     </section>
   </div>
   <!-- Packages Section -->
-  <section id="packages" class="bg-base-100 pt-20">
-    <div class="container text-center sm:text-left md:text-center">
-      <h2 class="font-heading text-4xl font-bold">New Website Packages</h2>
-      <p class="mt-2 mb-2">
-        Ditch the constraints of third-party platforms. Own your website, own
-        your future.
+  <section id="packages" class="bg-base-200 py-20">
+    <div class="container text-center">
+      <h2
+        class="font-heading text-4xl font-bold text-center w-[30rem] m-auto max-w-full md:w-full"
+      >
+        <span class="text-white font-extrabold bg-secondary px-2 inline-block"
+          >Own the code.</span
+        >
+        <span class="inline-block"> &nbsp;Take it with you.</span>
+      </h2>
+      <p
+        class="mb-2 text-center mt-4 md:w-[39rem] w-[22rem] max-w-full block m-auto"
+      >
+        Don't rent your website from a third-party platform. Own your website,
+        let it grow with your business.
       </p>
     </div>
 
-    <div class="container lg:max-w-[1200px] mt-6 md:mt-12">
+    <div class="container lg:max-w-[1200px] mt-10 md:mt-12 lg:mt-16">
       <div
         class="flex flex-row gap-4 sm:gap-2 mt-6 flex-wrap md:flex-nowrap lg:justify-center items-center sm:items-stretch mb-4 sm:mb-2 justify-center"
       >
@@ -390,7 +419,7 @@ defineOgImageScreenshot({
     <div class="bg-base-100">
       <section class="container py-20">
         <h2 id="contact" class="font-heading text-4xl font-bold">
-          Let me know what you're thinking!
+          Fire your questions at me!
         </h2>
         <p class="mt-2">
           Send me your questions, needs, or just say hi! I'd love to hear from
