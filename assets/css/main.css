@@ -8,7 +8,6 @@
     @apply text-gray-700;
   }
 } */
-
 .tick-list li {
   list-style: none; /* Removes default list style */
   padding-left: 25px; /* Adjust as needed */

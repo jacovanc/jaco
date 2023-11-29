@@ -17,4 +17,5 @@ export default defineNuxtConfig({
       mailgunDomain: process.env.MAILGUN_DOMAIN,
     },
   },
+  modules: ["@nuxt/image"],
 });

@@ -65,11 +65,20 @@
       </div>
     </div>
     <!-- Success Message -->
-    <div
-      v-if="successMessage"
-      class="alert border-success bg-success bg-opacity-10 text-success rounded-lg mt-6"
-    >
-      {{ successMessage }}
+    <div v-if="successMessage">
+      <div
+        class="alert border-success bg-success bg-opacity-10 text-success rounded-lg mt-6"
+      >
+        {{ successMessage }}
+      </div>
+      <!-- reset button -->
+      <button
+        type="button"
+        class="link text-base-content mt-2"
+        @click="successMessage = ''"
+      >
+        Send another message
+      </button>
     </div>
   </form>
 </template>
@@ -143,6 +152,7 @@ export default {
           this.messageError = "An error occurred while sending the message.";
         }
       }
+      this.loading = false;
     },
 
     validateEmail(email) {
