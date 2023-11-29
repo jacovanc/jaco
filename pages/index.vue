@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 defineOgImageScreenshot({
-  selector: "#hero",
+  selector: "#og_image_screenshot",
   alt: "Social Share image for Jaco's website",
+  delay: 2000,
 });
 </script>
 
@@ -9,7 +10,7 @@ defineOgImageScreenshot({
   <!-- Hero Section -->
   <section
     id="hero"
-    class="flex items-center justify-center bg-base-200 h-screen min-h-[700px] max-h-[820px] sm:min-h-[540px] sm:max-h-[450px] py-20"
+    class="flex items-center justify-center bg-base-200 h-screen min-h-[700px] max-h-[820px] sm:min-h-[540px] sm:max-h-[450px]"
   >
     <!-- Opening Statement -->
     <!-- <h1 class="text-2xl font-heading font-bold text-primary">
@@ -18,7 +19,8 @@ defineOgImageScreenshot({
 
     <!-- Introduction -->
     <div
-      class="container max-w-full w-96 sm:w-full sm:flex sm:flex-row sm:items-center sm:gap-10 sm:justify-center"
+      id="og_image_screenshot"
+      class="container max-w-full w-96 sm:w-[920px] sm:flex sm:flex-row sm:items-center sm:gap-10 sm:justify-center py-20"
     >
       <div>
         <div class="w-96 max-w-full sm:w-72 md:w-80">
@@ -45,7 +47,7 @@ defineOgImageScreenshot({
           </div>
         </div>
       </div>
-      <div class="sm:pb-6 w-80 md:w-96 max-w-full">
+      <div class="sm:pb-6 w-80 md:w-96 max-w-full" id="sub-hero">
         <h2 class="text-3xl font-sans font-bold">
           Your <span class="text-secondary">Web Specialist</span> committed to
           helping you succeed online
