@@ -64,7 +64,7 @@ defineOgImageScreenshot({
   </section>
 
   <div class="">
-    <section id="introduction" class="container py-20">
+    <section id="introduction" class="container pt-20">
       <h2 class="font-heading text-4xl font-bold">
         Clear introduction statement about me and what I do
       </h2>
