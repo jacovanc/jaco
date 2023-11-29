@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 defineOgImageScreenshot({
-  selector: "#og_image_screenshot",
-  alt: "Social Share image for Jaco's website",
-  delay: 2000,
+    cache: false,
+    selector: "#og_image_screenshot",
+    alt: "Social Share image for Jaco's website",
+    delay: 2000,
 });
 </script>
 
