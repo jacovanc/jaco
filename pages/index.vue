@@ -6,6 +6,27 @@ defineOgImageScreenshot({
   delay: 5000,
   cacheKey: `index_invalidate_id_1`, // Increment this value to invalidate the cache
 });
+
+let additionalServices = {
+  "SEO Advice":
+    "Boost your site's visibility and draw more traffic with expert SEO strategies.",
+  "Content Creation":
+    "Captivate your audience with professionally crafted content that resonates with your brand's voice.",
+  "Website Maintenance":
+    "Keep your site running smoothly with regular updates and maintenance.",
+  "Advanced Analytics Setup":
+    "Gain valuable insights into your site's performance and user behavior, by tracking specific interactions.",
+};
+let whyMe = {
+  "Client-Centric Approach":
+    "Your needs and goals are at the forefront of every decision, ensuring a solution that truly reflects your vision.",
+  "Beginner-Friendly":
+    "I offer clear, straightforward guidance, making web development accessible for everyone.",
+  "Flexible Solutions":
+    "My services are tailored to adapt and grow with your business, ensuring longevity and relevance.",
+  "Long-Term Support":
+    "You'll receive dedicated support and hosting for 6 months, with the option for extended assistance.",
+};
 </script>
 
 <template>
@@ -274,36 +295,30 @@ defineOgImageScreenshot({
       <p class="mt-2 mb-2">
         I'm here to help you get the most out of your website.
       </p>
-      <ul class="tick-list mt-6">
-        <li>
-          <strong class="text-secondary dark:text-secondary-light"
-            >SEO Advice:</strong
+      <ul class="mt-6 align-middle">
+        <li v-for="(value, key) in additionalServices" :key="key" class="my-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 text-secondary dark:text-secondary-light mr-2 inline-block align-middle"
           >
-          Boost your site's visibility and draw more traffic with expert SEO
-          strategies.
-        </li>
-        <li>
-          <strong class="text-secondary dark:text-secondary-light"
-            >Content Creation:</strong
-          >
-          Captivate your audience with professionally crafted content that
-          resonates with your brand's voice.
-        </li>
-        <li>
-          <strong class="text-secondary dark:text-secondary-light"
-            >Website Maintenance:</strong
-          >
-          Keep your site running smoothly with regular updates and maintenance.
-        </li>
-        <li>
-          <strong class="text-secondary dark:text-secondary-light"
-            >Advanced Analytics Setup:</strong
-          >
-          Gain valuable insights into your site's performance and user behavior,
-          by tracking specific interactions.
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+
+          <strong class="text-secondary dark:text-secondary-light align-middle"
+            >{{ key }}:
+          </strong>
+          <p class="align-middle inline">&nbsp;{{ value }}</p>
         </li>
       </ul>
-      <p class="mt-2 mb-2">
+      <p class="mt-6">
         Get in touch to discuss your needs and find out how I can help you.
       </p>
       <a class="btn btn-accent mt-6" href="#contact">Discuss with me</a>
@@ -379,34 +394,27 @@ defineOgImageScreenshot({
     <div class="bg-base-100">
       <section id="why-choose-jaco" class="container py-20">
         <h2 class="font-heading text-4xl font-bold">Why choose me?</h2>
-        <ul class="tick-list mt-6">
-          <li>
-            <strong class="text-secondary dark:text-secondary-light"
-              >Beginner-Friendly:</strong
+        <ul class="mt-6 align-middle">
+          <li v-for="(value, key) in whyMe" :key="key" class="my-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-primary dark:text-primary-light mr-2 inline-block align-middle"
             >
-            I offer clear, straightforward guidance, making web development
-            accessible for everyone.
-          </li>
-          <li>
-            <strong class="text-secondary dark:text-secondary-light"
-              >Flexible Solutions:</strong
-            >
-            My services are tailored to adapt and grow with your business,
-            ensuring longevity and relevance.
-          </li>
-          <li>
-            <strong class="text-secondary dark:text-secondary-light"
-              >Long-Term Support:</strong
-            >
-            You'll receive dedicated support and hosting for 6 months, with the
-            option for extended assistance.
-          </li>
-          <li>
-            <strong class="text-secondary dark:text-secondary-light"
-              >Client-Centric Approach:</strong
-            >
-            Your needs and goals are at the forefront of every decision,
-            ensuring a solution that truly reflects your vision.
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+
+            <strong class="text-primary dark:text-primary-light align-middle"
+              >{{ key }}:
+            </strong>
+            <p class="align-middle inline">&nbsp;{{ value }}</p>
           </li>
         </ul>
       </section>
