@@ -6,6 +6,17 @@ const THEME_KEY = "user-theme";
 const themeCookie = useCookie(THEME_KEY);
 console.info("themeCookie: " + themeCookie);
 
+// Post to /test
+if (process.server) {
+  const { data, error } = useFetch("/" + themeCookie.value, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ test: "test" }),
+  });
+}
+
 // If the cookie exists, set initialTheme to the value of the cookie. Otherwise set it to null.
 const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
 console.info("initialTheme: " + initialTheme);
