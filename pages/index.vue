@@ -45,7 +45,9 @@ defineOgImageScreenshot({
           <div
             class="bg-white rounded p-2 inline-block relative ml-10 shadow-lg speech-bubble"
           >
-            <p class="text-xl font-sans font-bold">Hi, I'm Jaco! &#x1F44B;</p>
+            <p class="text-xl font-sans font-bold text-gray-700">
+              Hi, I'm Jaco! &#x1F44B;
+            </p>
           </div>
         </div>
       </div>

@@ -44,7 +44,7 @@
             class="btn shadow-lg"
             :class="[
               color ? `border border-${color} ` : '',
-              color ? `bg-${color}` : '',
+              color ? `btn-${color}` : '',
               // color ? `bg-white` : 'bg-secondary',
               // color ? `text-${color}` : 'text-white',
               color ? `text-white` : 'btn-accent',

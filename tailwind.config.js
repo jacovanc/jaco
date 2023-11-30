@@ -14,7 +14,7 @@ export default {
       pattern: /accent|primary|secondary/, // This is needed for the dynamic color class on the custom package
     },
   ],
-  darkMode: ["class", '[data-theme="dark"]'],
+  darkMode: ["class", '[data-theme="dark"]'], // Use the daisyui theme selector property
   theme: {
     extend: {
       fontFamily: {
@@ -91,7 +91,7 @@ export default {
 
           // "base-content": "#4B5563",
           // "base-100": "#FDFEFE",
-          // "base-100-content": "#ff0000",
+          "base-content": "#e5edf1",
           // "base-200": "#D6E4FF",
           // "base-200-content": "#FFFFFF",
           // "base-300": "#ffe8ed",
