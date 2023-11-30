@@ -29,11 +29,11 @@ onMounted(() => {
     :data-theme="currentTheme !== null ? (currentTheme ? 'dark' : 'light') : ''"
   >
     <!-- Header -->
-    <header id="header" class="bg-base-200">
+    <header id="header" class="fixed top-0 w-full z-20">
       <div class="container p-4 flex justify-end">
         <label class="swap swap-rotate">
           <!-- this hidden checkbox controls the state -->
-          <input type="checkbox" v-model="currentTheme" />
+          <input type="checkbox" v-model="currentTheme" class="" />
 
           <!-- sun icon -->
           <svg

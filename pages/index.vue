@@ -204,7 +204,7 @@ let whyMe = {
       >
         <!-- Starter Package -->
         <Package
-          class="max-w-[370px] sm:max-w-[300px] lg:max-w-[370px] md:scale-95 lg:scale-100 md:rotate-[-2deg] md:-mr-4 lg:mr-0"
+          class="max-w-[370px] sm:max-w-[300px] lg:max-w-[370px] md:scale-95 lg:scale-100 z-1 md:rotate-[-2deg] md:-mr-4 lg:mr-0"
           :packageName="'🌱 Starter Package'"
           :listItems="[
             'User-friendly WordPress',
@@ -250,7 +250,7 @@ let whyMe = {
 
         <!-- Expansion Package -->
         <Package
-          class="max-w-[370px] sm:max-w-none sm:w-full md:max-w-[300px] md:w-auto lg:max-w-[370px] md:scale-95 lg:scale-100 md:rotate-[2deg]"
+          class="max-w-[370px] sm:max-w-none sm:w-full md:max-w-[300px] md:w-auto lg:max-w-[370px] md:scale-95 lg:scale-100 z-1 md:rotate-[2deg]"
           :packageName="'🚀 Expansion Package'"
           :listItems="[
             'Advanced custom solutions',
