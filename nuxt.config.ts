@@ -17,6 +17,22 @@ export default defineNuxtConfig({
       mailgunDomain: process.env.MAILGUN_DOMAIN,
     },
   },
+  head: {
+    script: [
+      {
+        hid: "calendly-js",
+        src: "https://assets.calendly.com/assets/external/widget.js",
+        defer: true,
+        async: true,
+      },
+    ],
+    link: [
+      {
+        hid: "calendly-css",
+        src: "https://assets.calendly.com/assets/external/widget.css",
+      },
+    ],
+  },
   modules: ["@nuxt/image", "@nuxtseo/module"],
   ogImage: {
     runtimeBrowser: true,

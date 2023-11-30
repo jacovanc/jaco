@@ -51,13 +51,21 @@ defineOgImageScreenshot({
       </div>
       <div class="sm:pb-6 w-80 md:w-96 max-w-full" id="sub-hero">
         <h2 class="text-3xl sm:text-xl md:text-3xl font-sans font-bold">
-          Your <span class="text-secondary">Web Specialist</span> committed to
-          helping you succeed online
+          Your
+          <span class="text-secondary dark:text-secondary-light"
+            >Web Specialist</span
+          >
+          committed to helping you succeed online
         </h2>
         <p class="mt-2">
           Don't just settle for a website. Build a
-          <span class="text-secondary font-bold">digital presence</span> that
-          you <span class="text-secondary font-bold">fully own</span>.
+          <span class="text-secondary dark:text-secondary-light font-bold"
+            >digital presence</span
+          >
+          that you
+          <span class="text-secondary dark:text-secondary-light font-bold"
+            >fully own</span
+          >.
         </p>
         <a class="btn btn-accent mt-6" href="#packages">View Packages</a>
       </div>
@@ -91,7 +99,7 @@ defineOgImageScreenshot({
       <h2
         class="font-heading text-4xl font-bold text-center w-[30rem] m-auto max-w-full md:w-full"
       >
-        <span class="text-primary">Your Website</span>
+        <span class="text-primary dark:text-primary-light">Your Website</span>
         should belong
         <span class="inline-block"
           >to
@@ -112,7 +120,7 @@ defineOgImageScreenshot({
           class="flex-grow border bg-primary bg-opacity-5 shadow-lg p-4 border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-xl">Complete Control</strong>
-          <strong class="text-primary text-lg"
+          <strong class="text-primary dark:text-primary-light text-lg"
             >Your website, your rules.</strong
           >
           Modify, upgrade, or change as you grow, free from platform limitations
@@ -122,19 +130,24 @@ defineOgImageScreenshot({
           class="flex-grow border p-4 bg-primary bg-opacity-5 shadow-lg border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-xl">Growth-Ready</strong>
-          <strong class="text-primary text-lg">Evolve</strong> your website in
-          tandem with your business needs,
-          <strong class="text-primary text-lg"
+          <strong class="text-primary dark:text-primary-light text-lg"
+            >Evolve</strong
+          >
+          your website in tandem with your business needs,
+          <strong class="text-primary dark:text-primary-light text-lg"
             >without starting from scratch</strong
           >
         </li>
         <li
-          class="flex-grow border p-4 bg-primary bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          class="flex-grow border p-4 bg-primary bg-opacity-5 shadow-lg border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-xl">Vendor Independence</strong>
-          <strong class="text-primary text-lg">Break free</strong> from the
-          confines of platforms like Wix.
-          <strong class="text-primary text-lg">Embrace complete control</strong
+          <strong class="text-primary dark:text-primary-light text-lg"
+            >Break free</strong
+          >
+          from the confines of platforms like Wix.
+          <strong class="text-primary dark:text-primary-light text-lg"
+            >Embrace complete control</strong
           >, enhanced functionality, and the freedom to adapt and grow.
         </li>
         <!-- More list items here -->
@@ -261,20 +274,29 @@ defineOgImageScreenshot({
       </p>
       <ul class="tick-list mt-6">
         <li>
-          <strong class="text-secondary">SEO Advice:</strong> Boost your site's
-          visibility and draw more traffic with expert SEO strategies.
+          <strong class="text-secondary dark:text-secondary-light"
+            >SEO Advice:</strong
+          >
+          Boost your site's visibility and draw more traffic with expert SEO
+          strategies.
         </li>
         <li>
-          <strong class="text-secondary">Content Creation:</strong> Captivate
-          your audience with professionally crafted content that resonates with
-          your brand's voice.
+          <strong class="text-secondary dark:text-secondary-light"
+            >Content Creation:</strong
+          >
+          Captivate your audience with professionally crafted content that
+          resonates with your brand's voice.
         </li>
         <li>
-          <strong class="text-secondary">Website Maintenance:</strong> Keep your
-          site running smoothly with regular updates and maintenance.
+          <strong class="text-secondary dark:text-secondary-light"
+            >Website Maintenance:</strong
+          >
+          Keep your site running smoothly with regular updates and maintenance.
         </li>
         <li>
-          <strong class="text-secondary">Advanced Analytics Setup:</strong>
+          <strong class="text-secondary dark:text-secondary-light"
+            >Advanced Analytics Setup:</strong
+          >
           Gain valuable insights into your site's performance and user behavior,
           by tracking specific interactions.
         </li>
@@ -357,22 +379,30 @@ defineOgImageScreenshot({
         <h2 class="font-heading text-4xl font-bold">Why choose me?</h2>
         <ul class="tick-list mt-6">
           <li>
-            <strong class="text-secondary">Beginner-Friendly:</strong> I offer
-            clear, straightforward guidance, making web development accessible
-            for everyone.
+            <strong class="text-secondary dark:text-secondary-light"
+              >Beginner-Friendly:</strong
+            >
+            I offer clear, straightforward guidance, making web development
+            accessible for everyone.
           </li>
           <li>
-            <strong class="text-secondary">Flexible Solutions:</strong> My
-            services are tailored to adapt and grow with your business, ensuring
-            longevity and relevance.
+            <strong class="text-secondary dark:text-secondary-light"
+              >Flexible Solutions:</strong
+            >
+            My services are tailored to adapt and grow with your business,
+            ensuring longevity and relevance.
           </li>
           <li>
-            <strong class="text-secondary">Long-Term Support:</strong> You'll
-            receive dedicated support and hosting for 6 months, with the option
-            for extended assistance.
+            <strong class="text-secondary dark:text-secondary-light"
+              >Long-Term Support:</strong
+            >
+            You'll receive dedicated support and hosting for 6 months, with the
+            option for extended assistance.
           </li>
           <li>
-            <strong class="text-secondary">Client-Centric Approach:</strong>
+            <strong class="text-secondary dark:text-secondary-light"
+              >Client-Centric Approach:</strong
+            >
             Your needs and goals are at the forefront of every decision,
             ensuring a solution that truly reflects your vision.
           </li>
@@ -427,23 +457,11 @@ defineOgImageScreenshot({
           Let's discuss your needs and find optimum solution for you.
         </p>
         <p>Just choose a time that suits you with the button below.</p>
-        <!-- Calendly link widget begin -->
-        <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        />
-        <script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          type="text/javascript"
-          async
-          defer
-        ></script>
         <a
           class="btn btn-primary mt-6"
           onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jacovan/30min'});return false;"
           >Schedule a call</a
         >
-        <!-- Calendly link widget end -->
 
         <h2 class="font-heading text-4xl font-bold mt-10">
           Just have a question?

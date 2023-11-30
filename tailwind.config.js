@@ -14,6 +14,7 @@ export default {
       pattern: /accent|primary|secondary/, // This is needed for the dynamic color class on the custom package
     },
   ],
+  darkMode: ["class", '[data-theme="dark"]'],
   theme: {
     extend: {
       fontFamily: {
@@ -22,9 +23,14 @@ export default {
         // heading: ["Open Sans", "sans-serif"], // For headings
       },
 
-      // colors: {
-      //   neutral: "#ff0000", // Off-White
-      // },
+      colors: {
+        "primary-light": "#75c6fb",
+        "primary-light-content": "#FDFEFE",
+        "secondary-light": "#45d5a1",
+        "secondary-dark-content": "#FDFEFE",
+        "accent-light": "#f2994a",
+        "accent-light-content": "#FDFEFE",
+      },
     },
 
     container: {
@@ -47,13 +53,13 @@ export default {
   },
   daisyui: {
     themes: [
-      // "synthwave",
+      // "synthwave", // Only small tweaks needed
       // "retro",
       // "valentine",
       // "lofi",
       // "pastel",
       // "black",
-      // "dracula",
+      // "dracula", // Primary colours need updating but base stuff is good
       // "autumn",
       // "business",
       // "winter",
@@ -62,14 +68,39 @@ export default {
       // "cmyk",
       // "night",
       // "nord",
+
       {
+        dark: {
+          ...require("daisyui/src/theming/themes")["dim"], // Dark mode?
+          primary: "#2980B9",
+          "primary-content": "#FDFEFE",
+
+          secondary: "#008264",
+          "secondary-content": "#FDFEFE",
+
+          accent: "#E67E22",
+          "accent-content": "#FDFEFE",
+
+          neutral: "gray",
+
+          // info: "#3498DB",
+          info: "#1c92f2",
+          success: "#22c55e",
+          warning: "#ff9900",
+          error: "#ff5724",
+
+          // "base-content": "#4B5563",
+          // "base-100": "#FDFEFE",
+          // "base-100-content": "#ff0000",
+          // "base-200": "#D6E4FF",
+          // "base-200-content": "#FFFFFF",
+          // "base-300": "#ffe8ed",
+          // "base-300-content": "#FFFFFF",
+
+          // "--border-btn": "2px",
+        },
         light: {
-          // ...require("daisyui/src/theming/themes")["synthwave"], // Dark mode?
-          // ...require("daisyui/src/theming/themes")["dracula"], // Dark mode?
-          // ...require("daisyui/src/theming/themes")["nord"], // Light mode?
-          // ...require("daisyui/src/theming/themes")["dim"], // Dark mode?
           ...require("daisyui/src/theming/themes")["winter"], // Light Mode?
-          // ...require("daisyui/src/theming/themes")["light"], // Light mode
           primary: "#2980B9",
           // primary: "#003478",
           "primary-content": "#FDFEFE",
@@ -97,7 +128,6 @@ export default {
           // "--border-btn": "2px",
         },
       },
-      "dark",
 
       // other built-in themes...
     ],
