@@ -3,11 +3,19 @@ import Cookies from "js-cookie";
 
 const THEME_KEY = "user-theme";
 const themeCookie = useCookie(THEME_KEY);
+console.log("themeCookie: " + themeCookie);
+
 // If the cookie exists, set initialTheme to the value of the cookie. Otherwise set it to null.
 const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
+console.log("initialTheme: " + initialTheme);
+
 const currentTheme: any = ref(initialTheme);
+console.log("currentTheme: " + currentTheme);
+console.log("currentTheme.value: " + currentTheme.value);
 
 onMounted(() => {
+  console.log("onMounted");
+  console.log("currentTheme.value: " + currentTheme.value);
   if (currentTheme.value === null) {
     // Set to system theme preference
     currentTheme.value = window.matchMedia("(prefers-color-scheme: dark)")
