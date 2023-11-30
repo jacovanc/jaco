@@ -44,7 +44,7 @@ const themeClass = computed(() => {
 
 <template>
   <div :data-theme="themeClass">
-    <!-- {{ themeClass }} -->
+    {{ themeClass }}
     <!-- Header -->
     <header id="header" class="fixed top-0 w-full z-20">
       <div class="container p-4 flex justify-end">
