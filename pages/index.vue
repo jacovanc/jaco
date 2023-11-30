@@ -198,6 +198,14 @@ let whyMe = {
         Your website is the digital face of your business. It's the first step
         in building a relationship with your customers.
       </p>
+      <p
+        class="mb-2 text-center mt-4 md:w-[39rem] w-[22rem] max-w-full block m-auto"
+      >
+        Note sure what something means? &nbsp;&nbsp;
+        <a class="btn btn-sm btn-accent btn-outline mt-2" href="#faq"
+          >Ask me!</a
+        >
+      </p>
     </div>
 
     <div class="container lg:max-w-[1200px] mt-10 md:mt-12 lg:mt-16">
@@ -209,17 +217,18 @@ let whyMe = {
           class="max-w-[370px] sm:max-w-[300px] lg:max-w-[370px] md:scale-95 lg:scale-100 z-1 md:rotate-[-2deg] md:-mr-4 lg:mr-0"
           :packageName="'🌱 Starter Package'"
           :listItems="[
-            'User-friendly WordPress',
-            'Use an existing theme',
+            'User-friendly WordPress for your content',
+            'Use an existing theme, adapted to your requirements',
+            'SEO ready',
             'Deployed and ready for your content',
           ]"
           :infoList="[
             {
-              key: 'Support',
+              key: 'Support:',
               value: '6 months ongoing support & hosting included.',
             },
             {
-              key: 'Ideal For',
+              key: 'Ideal For:',
               value:
                 'New online ventures; personal sites, small businesses, basic e-commerce.',
             },
@@ -233,16 +242,19 @@ let whyMe = {
           class="max-w-[370px] sm:max-w-[300px] lg:max-w-[370px] md:scale-105 lg:scale-110 z-10 md:-mr-4 lg:mr-0"
           :packageName="'🌟 Growth Package'"
           :listItems="[
-            'Implemented based on your designs or wireframes',
-            'Performant custom theme for your needs',
+            'Wordpress for your content, or another CMS of your choice',
+            'Bring your own design or wireframes',
+            'Performant custom theme',
+            'SEO ready',
+            'Deployed and ready for your content',
           ]"
           :infoList="[
             {
-              key: 'Support',
+              key: 'Support:',
               value: '6 months ongoing support & hosting included.',
             },
             {
-              key: 'Ideal For',
+              key: 'Ideal For:',
               value: 'Businesses ready to make a unique digital statement.',
             },
           ]"
@@ -255,17 +267,17 @@ let whyMe = {
           class="max-w-[370px] sm:max-w-none sm:w-full md:max-w-[300px] md:w-auto lg:max-w-[370px] md:scale-95 lg:scale-100 z-1 md:rotate-[2deg]"
           :packageName="'🚀 Expansion Package'"
           :listItems="[
-            'Advanced custom solutions',
-            'SPA/PWA',
-            'Any bespoke functionalities.',
+            'Advanced custom solutions for larger-scale projects.',
+            'Sophisticated architecure bespoke to project requirements (PWAs, SPAs, headless CMS, APIs etc)',
+            'Flexible contracts and business arrangements.',
           ]"
           :infoList="[
             {
-              key: 'Support',
-              value: '6 months ongoing support & hosting included.',
+              key: 'Support:',
+              value: 'Arranged ongoing support & hosting based on your needs.',
             },
             {
-              key: 'Ideal For',
+              key: 'Ideal For:',
               value:
                 'Businesses looking for sophisticated, high-end web solutions.',
             },
@@ -279,11 +291,14 @@ let whyMe = {
       <Package
         class="max-w-[370px] sm:max-w-none sm:w-full md:max-w-[500px] md:mt-10 lg:mt-16 m-auto"
         :packageName="'✨ Custom Path'"
-        :listItems="['Unique requirements or larger-scale projects.']"
+        :listItems="[
+          'Unique requirements or larger-scale projects.',
+          'Flexible contracts and business arrangements.',
+        ]"
         :infoList="[
           {
-            key: 'Fully bespoke',
-            value: 'Get in touch to talk about your project.',
+            key: 'Can\'t find what you\'re looking for?',
+            value: 'Get in touch!',
           },
         ]"
       />
@@ -297,15 +312,19 @@ let whyMe = {
       <p class="mt-2 mb-2">
         I'm here to help you get the most out of your website.
       </p>
-      <ul class="mt-6 align-middle">
-        <li v-for="(value, key) in additionalServices" :key="key" class="my-3">
+      <ul class="my-6 align-middle">
+        <li
+          v-for="(value, key) in additionalServices"
+          :key="key"
+          class="my-3 pl-7"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 text-secondary dark:text-secondary-light mr-2 inline-block align-middle"
+            class="w-[30px] h-6 text-secondary dark:text-secondary-light inline-block align-middle -ml-7 pr-[6px]"
           >
             <path
               stroke-linecap="round"
@@ -339,13 +358,8 @@ let whyMe = {
           <li class="step step-secondary items-start">
             <p class="text-left text-sm ml-2 my-2">
               <span class="font-bold text-xl mt-6">Get in touch!</span> <br />
-              <a
-                class="btn btn-primary btn-outline btn-sm mt-1 mr-[2px]"
-                href="#contact"
-                >Contact me</a
-              >
-              to arrange a video call, where we will discuss your needs in
-              detail
+              We'll arrange a video call where we will discuss your needs in
+              detail.
             </p>
           </li>
           <!-- We should probably add some info explaining each section. Perhaps collapsable like the faqs -->
@@ -397,14 +411,14 @@ let whyMe = {
       <section id="why-choose-jaco" class="container py-20">
         <h2 class="font-heading text-4xl font-bold">Why choose me?</h2>
         <ul class="mt-6 align-middle">
-          <li v-for="(value, key) in whyMe" :key="key" class="my-3">
+          <li v-for="(value, key) in whyMe" :key="key" class="my-3 pl-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6 text-primary dark:text-primary-light mr-2 inline-block align-middle"
+              class="w-[30px] h-6 text-primary dark:text-primary-light inline-block align-middle -ml-7 pr-[6px]"
             >
               <path
                 stroke-linecap="round"
