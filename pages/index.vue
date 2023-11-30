@@ -1,10 +1,12 @@
 <script lang="ts" setup>
 defineOgImageScreenshot({
+  colorScheme: "light",
   cache: false,
   selector: "#og_image_screenshot",
+  mask: "#header",
   alt: "Social Share image for Jaco's website",
-  delay: 5000,
-  cacheKey: `index_invalidate_id_1`, // Increment this value to invalidate the cache
+  delay: 10000,
+  cacheKey: `index_invalidate_id_2`, // Increment this value to invalidate the cache
 });
 
 let additionalServices = {
