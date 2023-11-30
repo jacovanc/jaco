@@ -5,7 +5,7 @@ const THEME_KEY = "user-theme";
 const themeCookie = useCookie(THEME_KEY);
 // If the cookie exists, set initialTheme to the value of the cookie. Otherwise set it to null.
 const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
-const currentTheme = ref(initialTheme);
+const currentTheme: any = ref(initialTheme);
 
 onMounted(() => {
   if (currentTheme.value === null) {
