@@ -6,23 +6,11 @@ const THEME_KEY = "user-theme";
 const themeCookie = useCookie(THEME_KEY);
 console.info("themeCookie: " + themeCookie);
 
-// Post to /test
-if (process.server) {
-  const { data, error } = useFetch("/" + themeCookie.value, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ test: "test" }),
-  });
-}
-
 // If the cookie exists, set initialTheme to the value of the cookie. Otherwise set it to null.
 const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
 console.info("initialTheme: " + initialTheme);
 
-const currentTheme: any = ref("light");
-currentTheme.value = initialTheme;
+const currentTheme: any = ref(initialTheme);
 
 console.info("currentTheme: " + currentTheme);
 console.info("currentTheme.value: " + currentTheme.value);
@@ -43,6 +31,9 @@ onMounted(() => {
       Cookies.set(THEME_KEY, currentTheme.value, { expires: 365 });
       // Log in format "Dark mode activated"
       console.info(currentTheme.value ? "Dark" : "Light", "mode activated");
+
+      // Set the data-theme attribute on the html element to the value of themeClass
+      document.documentElement.setAttribute("data-theme", themeClass.value);
     }
   });
 });
@@ -56,7 +47,7 @@ const themeClass = computed(() => {
 </script>
 
 <template>
-  <div :data-theme="themeClass">
+  <div>
     {{ themeClass }}
     <!-- Header -->
     <header id="header" class="fixed top-0 w-full z-20">
