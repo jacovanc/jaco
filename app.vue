@@ -10,7 +10,9 @@ console.info("themeCookie: " + themeCookie);
 const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
 console.info("initialTheme: " + initialTheme);
 
-const currentTheme: any = ref(initialTheme);
+const currentTheme: any = ref("light");
+currentTheme.value = initialTheme;
+
 console.info("currentTheme: " + currentTheme);
 console.info("currentTheme.value: " + currentTheme.value);
 
