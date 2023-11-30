@@ -19,7 +19,11 @@ function themeClass() {
 }
 
 function setTheme(value: string) {
-  Cookies.set(THEME_KEY, currentTheme.value, { expires: 365 });
+  Cookies.set(THEME_KEY, currentTheme.value, {
+    expires: 365,
+    secure: true,
+    path: "/",
+  });
   console.log("setting theme to", value);
 
   useHead({
