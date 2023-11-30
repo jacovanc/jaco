@@ -3,10 +3,21 @@ import Cookies from "js-cookie";
 import { computed, onMounted, ref, watchEffect } from "vue";
 
 const THEME_KEY = "user-theme";
-const themeCookie = useCookie(THEME_KEY);
+// const themeCookie = useCookie(THEME_KEY);
+// Fetching theme cookie asynchronously
+const { data: themeCookie } = await useAsyncData("theme", () => {
+  const themeCookie = useCookie(THEME_KEY);
+  console.log("theme cookie");
+  console.log(themeCookie.value);
+  return themeCookie.value;
+});
+console.log("new theme cookie");
+console.log(themeCookie);
+console.log(themeCookie.value);
 
 // If the cookie exists, set initialTheme to the value of the cookie. Otherwise set it to null.
-const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
+// const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
+const initialTheme = themeCookie.value === undefined ? null : themeCookie;
 
 const currentTheme: any = ref(initialTheme);
 
@@ -15,7 +26,7 @@ function themeClass() {
     ? currentTheme.value
       ? "dark"
       : "light"
-    : "test";
+    : "light";
 }
 
 function setTheme(value: string) {
