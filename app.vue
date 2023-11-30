@@ -1,67 +1,37 @@
 <script setup lang="ts">
-import Cookies from "js-cookie";
-import { computed, onMounted, ref, watchEffect } from "vue";
+import { onMounted, ref, watchEffect } from "vue";
 
 const THEME_KEY = "user-theme";
-// const themeCookie = useCookie(THEME_KEY);
-// Fetching theme cookie asynchronously
-const { data: themeCookie } = await useAsyncData("theme", () => {
-  const themeCookie = useCookie(THEME_KEY);
-  console.log("theme cookie");
-  console.log(themeCookie.value);
-  return themeCookie.value;
-});
-console.log("new theme cookie");
-console.log(themeCookie);
-console.log(themeCookie.value);
+const currentTheme = ref();
 
-// If the cookie exists, set initialTheme to the value of the cookie. Otherwise set it to null.
-// const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
-const initialTheme = themeCookie.value === undefined ? null : themeCookie;
+function setTheme() {
+  if (currentTheme.value === null) {
+    return;
+  }
+  localStorage.setItem(THEME_KEY, currentTheme.value);
 
-const currentTheme: any = ref(initialTheme);
-
-function themeClass() {
-  return currentTheme.value !== null
-    ? currentTheme.value
+  // Current theme is true/false for dark/light
+  // Set the html attribute data-theme to dark/light
+  document.documentElement.setAttribute(
+    "data-theme",
+    currentTheme.value === true || currentTheme.value === "true"
       ? "dark"
       : "light"
-    : "light";
+  );
 }
-
-function setTheme(value: string) {
-  Cookies.set(THEME_KEY, currentTheme.value, {
-    expires: 365,
-    secure: true,
-    path: "/",
-  });
-  console.log("setting theme to", value);
-
-  useHead({
-    htmlAttrs: {
-      "data-theme": themeClass(),
-    },
-  });
-}
-
-setTheme(themeClass()); // Try set the theme on the server side (now) in case there was a cookie
 
 onMounted(() => {
-  // If there was no cookie, set the theme to the system preference
-  if (currentTheme.value === null) {
-    // Set to system theme preference
-    currentTheme.value = window.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? true
-      : false;
-    setTheme(themeClass());
+  const theme = localStorage.getItem(THEME_KEY);
+
+  currentTheme.value = null; // Use default
+  if (theme) {
+    currentTheme.value = theme;
   }
 
-  // Watch for changes to the theme toggle and set the theme accordingly
+  setTheme();
+
   watchEffect(() => {
-    // Log in format "Dark mode activated"
-    console.info(currentTheme.value ? "Dark" : "Light", "mode activated");
-    setTheme(themeClass());
+    setTheme();
   });
 });
 </script>

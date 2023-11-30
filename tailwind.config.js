@@ -52,6 +52,7 @@ export default {
     },
   },
   daisyui: {
+    darkTheme: "dark",
     themes: [
       // "synthwave", // Only small tweaks needed
       // "retro",
@@ -70,6 +71,34 @@ export default {
       // "nord",
 
       {
+        light: {
+          ...require("daisyui/src/theming/themes")["winter"], // Light Mode?
+          primary: "#2980B9",
+          // primary: "#003478",
+          "primary-content": "#FDFEFE",
+          // secondary: "#1ABC9C",
+          secondary: "#008264",
+          "secondary-content": "#FDFEFE",
+          accent: "#E67E22",
+          "accent-content": "#FDFEFE",
+          neutral: "gray",
+
+          // info: "#3498DB",
+          info: "#1c92f2",
+          success: "#22c55e",
+          warning: "#ff9900",
+          error: "#ff5724",
+
+          // "base-content": "#4B5563",
+          // "base-100": "#FDFEFE",
+          // "base-100-content": "#ff0000",
+          // "base-200": "#D6E4FF",
+          // "base-200-content": "#FFFFFF",
+          // "base-300": "#ffe8ed",
+          // "base-300-content": "#FFFFFF",
+
+          // "--border-btn": "2px",
+        },
         dark: {
           ...require("daisyui/src/theming/themes")["dim"], // Dark mode?
           primary: "#2980B9",
@@ -92,34 +121,6 @@ export default {
           // "base-content": "#4B5563",
           // "base-100": "#FDFEFE",
           "base-content": "#e5edf1",
-          // "base-200": "#D6E4FF",
-          // "base-200-content": "#FFFFFF",
-          // "base-300": "#ffe8ed",
-          // "base-300-content": "#FFFFFF",
-
-          // "--border-btn": "2px",
-        },
-        light: {
-          ...require("daisyui/src/theming/themes")["winter"], // Light Mode?
-          primary: "#2980B9",
-          // primary: "#003478",
-          "primary-content": "#FDFEFE",
-          // secondary: "#1ABC9C",
-          secondary: "#008264",
-          "secondary-content": "#FDFEFE",
-          accent: "#E67E22",
-          "accent-content": "#FDFEFE",
-          neutral: "gray",
-
-          // info: "#3498DB",
-          info: "#1c92f2",
-          success: "#22c55e",
-          warning: "#ff9900",
-          error: "#ff5724",
-
-          // "base-content": "#4B5563",
-          // "base-100": "#FDFEFE",
-          // "base-100-content": "#ff0000",
           // "base-200": "#D6E4FF",
           // "base-200-content": "#FFFFFF",
           // "base-300": "#ffe8ed",
