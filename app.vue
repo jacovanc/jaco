@@ -10,45 +10,49 @@ const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
 
 const currentTheme: any = ref(initialTheme);
 
-const themeClass = computed(() => {
+function themeClass() {
   return currentTheme.value !== null
     ? currentTheme.value
       ? "dark"
       : "light"
-    : "";
-});
+    : "test";
+}
 
-useHead({
-  htmlAttrs: {
-    "data-theme": themeClass,
-  },
-});
+function setTheme(value: string) {
+  Cookies.set(THEME_KEY, currentTheme.value, { expires: 365 });
+  console.log("setting theme to", value);
+
+  useHead({
+    htmlAttrs: {
+      "data-theme": themeClass(),
+    },
+  });
+}
+
+setTheme(themeClass()); // Try set the theme on the server side (now) in case there was a cookie
 
 onMounted(() => {
+  // If there was no cookie, set the theme to the system preference
   if (currentTheme.value === null) {
     // Set to system theme preference
     currentTheme.value = window.matchMedia("(prefers-color-scheme: dark)")
       .matches
       ? true
       : false;
+    setTheme(themeClass());
   }
 
+  // Watch for changes to the theme toggle and set the theme accordingly
   watchEffect(() => {
-    if (currentTheme.value !== null) {
-      Cookies.set(THEME_KEY, currentTheme.value, { expires: 365 });
-      // Log in format "Dark mode activated"
-      console.info(currentTheme.value ? "Dark" : "Light", "mode activated");
-
-      // Set the data-theme attribute on the html element to the value of themeClass
-      document.documentElement.setAttribute("data-theme", themeClass.value);
-    }
+    // Log in format "Dark mode activated"
+    console.info(currentTheme.value ? "Dark" : "Light", "mode activated");
+    setTheme(themeClass());
   });
 });
 </script>
 
 <template>
   <div>
-    {{ themeClass }}
     <!-- Header -->
     <header id="header" class="fixed top-0 w-full z-20">
       <div class="container p-4 flex justify-end">
