@@ -1,21 +1,22 @@
 <script setup lang="ts">
 import Cookies from "js-cookie";
+import { ref, onMounted, watchEffect, computed } from "vue";
 
 const THEME_KEY = "user-theme";
 const themeCookie = useCookie(THEME_KEY);
-console.log("themeCookie: " + themeCookie);
+console.info("themeCookie: " + themeCookie);
 
 // If the cookie exists, set initialTheme to the value of the cookie. Otherwise set it to null.
 const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
-console.log("initialTheme: " + initialTheme);
+console.info("initialTheme: " + initialTheme);
 
 const currentTheme: any = ref(initialTheme);
-console.log("currentTheme: " + currentTheme);
-console.log("currentTheme.value: " + currentTheme.value);
+console.info("currentTheme: " + currentTheme);
+console.info("currentTheme.value: " + currentTheme.value);
 
 onMounted(() => {
-  console.log("onMounted");
-  console.log("currentTheme.value: " + currentTheme.value);
+  console.info("onMounted");
+  console.info("currentTheme.value: " + currentTheme.value);
   if (currentTheme.value === null) {
     // Set to system theme preference
     currentTheme.value = window.matchMedia("(prefers-color-scheme: dark)")
@@ -27,15 +28,23 @@ onMounted(() => {
   watchEffect(() => {
     if (currentTheme.value !== null) {
       Cookies.set(THEME_KEY, currentTheme.value, { expires: 365 });
+      // Log in format "Dark mode activated"
+      console.info(currentTheme.value ? "Dark" : "Light", "mode activated");
     }
   });
+});
+const themeClass = computed(() => {
+  return currentTheme.value !== null
+    ? currentTheme.value
+      ? "dark"
+      : "light"
+    : "";
 });
 </script>
 
 <template>
-  <div
-    :data-theme="currentTheme !== null ? (currentTheme ? 'dark' : 'light') : ''"
-  >
+  <div :data-theme="themeClass">
+    <!-- {{ themeClass }} -->
     <!-- Header -->
     <header id="header" class="fixed top-0 w-full z-20">
       <div class="container p-4 flex justify-end">
