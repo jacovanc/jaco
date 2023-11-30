@@ -63,7 +63,7 @@ export default {
       // "night",
       // "nord",
       {
-        mytheme: {
+        light: {
           // ...require("daisyui/src/theming/themes")["synthwave"], // Dark mode?
           // ...require("daisyui/src/theming/themes")["dracula"], // Dark mode?
           // ...require("daisyui/src/theming/themes")["nord"], // Light mode?
@@ -97,6 +97,8 @@ export default {
           // "--border-btn": "2px",
         },
       },
+      "dark",
+
       // other built-in themes...
     ],
   },

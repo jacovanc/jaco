@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-base-100 rounded-lg">
     <div
       class="package w-full border rounded-lg shadow-lg flex flex-row flex-wrap overflow-hidden sm:h-full"
       :class="[color ? `border-t border-${color}` : 'border-neutral']"
