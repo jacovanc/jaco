@@ -58,7 +58,11 @@
       </div>
       <!-- Submit Button -->
       <div class="mt-6">
-        <button type="submit" class="btn btn-accent w-auto" :disabled="loading">
+        <button
+          type="submit"
+          class="btn btn-primary w-auto"
+          :disabled="loading"
+        >
           <span v-if="loading" class="loading loading-spinner"></span>
           Send Message
         </button>

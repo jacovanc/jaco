@@ -57,8 +57,7 @@ defineOgImageScreenshot({
         <p class="mt-2">
           Don't just settle for a website. Build a
           <span class="text-secondary font-bold">digital presence</span> that
-          you
-          <span class="text-secondary font-bold">fully own</span>
+          you <span class="text-secondary font-bold">fully own</span>.
         </p>
         <a class="btn btn-accent mt-6" href="#packages">View Packages</a>
       </div>
@@ -104,16 +103,16 @@ defineOgImageScreenshot({
       <p
         class="mb-2 text-center mt-4 md:w-[39rem] w-[22rem] max-w-full block m-auto"
       >
-        Your website is the digital face of your business. It's the first step
-        in building a relationship with your customers.
+        Don't rent your website from a third-party platform. Own your website,
+        let it grow with your business.
       </p>
 
       <ul class="flex flex-wrap gap-4 mt-10">
         <li
-          class="flex-grow border bg-secondary bg-opacity-5 shadow-lg p-4 border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          class="flex-grow border bg-primary bg-opacity-5 shadow-lg p-4 border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-xl">Complete Control</strong>
-          <strong class="text-secondary text-lg"
+          <strong class="text-primary text-lg"
             >Your website, your rules.</strong
           >
           Modify, upgrade, or change as you grow, free from platform limitations
@@ -130,13 +129,13 @@ defineOgImageScreenshot({
           >
         </li>
         <li
-          class="flex-grow border p-4 bg-secondary bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+          class="flex-grow border p-4 bg-primary bg-opacity-5 shadow-lg border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
           <strong class="block mb-2 text-xl">Vendor Independence</strong>
-          <strong class="text-secondary text-lg">Break free</strong> from the
+          <strong class="text-primary text-lg">Break free</strong> from the
           confines of platforms like Wix.
-          <strong class="text-secondary text-lg">Embrace design freedom</strong
-          >, enhanced functionality, and portability.
+          <strong class="text-primary text-lg">Embrace complete control</strong
+          >, enhanced functionality, and the freedom to adapt and grow.
         </li>
         <!-- More list items here -->
       </ul>
@@ -158,8 +157,8 @@ defineOgImageScreenshot({
       <p
         class="mb-2 text-center mt-4 md:w-[39rem] w-[22rem] max-w-full block m-auto"
       >
-        Don't rent your website from a third-party platform. Own your website,
-        let it grow with your business.
+        Your website is the digital face of your business. It's the first step
+        in building a relationship with your customers.
       </p>
     </div>
 
@@ -280,6 +279,9 @@ defineOgImageScreenshot({
           by tracking specific interactions.
         </li>
       </ul>
+      <p class="mt-2 mb-2">
+        Get in touch to discuss your needs and find out how I can help you.
+      </p>
       <a class="btn btn-accent mt-6" href="#contact">Discuss with me</a>
     </section>
 
@@ -295,7 +297,7 @@ defineOgImageScreenshot({
         <ul class="steps steps-vertical mt-2">
           <li class="step step-secondary items-start">
             <p class="text-left text-sm ml-2 my-2">
-              <span class="font-bold text-xl">Get in touch!</span> <br />
+              <span class="font-bold text-xl mt-6">Get in touch!</span> <br />
               <a
                 class="btn btn-primary btn-outline btn-sm mt-1 mr-[2px]"
                 href="#contact"
@@ -388,30 +390,30 @@ defineOgImageScreenshot({
           class="mt-6"
           :faqItems="[
             {
-              question: 'How do I get started with my new website?',
+              question: 'How do we get started?',
               answer:
-                'Contact me and we\'ll discuss your needs to find the perfect package for you.',
+                'Book a call or contact me and we\'ll discuss your needs. We will come up with a solution that works for you, and I will answer any questions you have.',
             },
             {
               question: 'Can I upgrade my website package in the future?',
               answer:
-                'Absolutely! Your website can grow and evolve with your business...',
+                'Absolutely! Your website can grow and evolve with your business. This is a key benefit of owning your website. Not only that, you can also take it with you if you decide to move to a different hosting provider. You will not be dependant on me, and can always choose to take your website to a different developer or agency if you\'re ever not satisifed with my services (but I promise you won\'t be!).',
             },
             {
               question: 'What kind of ongoing support do you offer?',
               answer:
-                'I provide 6 months of support and hosting with all my services...',
+                'I provide 6 months of support and hosting with all my services (exact details included in your proposal). This will get you up and running, and give you time to get comfortable with your new website without having to think about hosting providers. After that, I offer ongoing support and hosting for a monthly fee. This includes regular updates and maintenance, as well as any additional support you may need. You can cancel this at any time and take your website elsewhere if you wish to do so.',
             },
             {
               question: 'Do you provide training on how to use my new website?',
               answer:
-                'Yes, I offer guidance to help you manage and update your site confidently.',
+                'Yes! I will show you the ropes, and offer guidance to help you manage and update your site confidently. That\'s what I\'m here for - not just to build your website, but also to help you get the most out of it!',
             },
           ]"
         />
 
-        <p class="my-3">Have more questions?</p>
-        <a class="btn btn-accent" href="#contact">Get in touch!</a>
+        <p class="mt-6">Have more questions?</p>
+        <a class="btn btn-accent mt-3" href="#contact">Get in touch!</a>
       </section>
     </div>
 
@@ -419,11 +421,36 @@ defineOgImageScreenshot({
     <div class="bg-base-100">
       <section class="container py-20">
         <h2 id="contact" class="font-heading text-4xl font-bold">
-          Fire your questions at me!
+          Book a call
         </h2>
         <p class="mt-2">
-          Send me your questions, needs, or just say hi! I'd love to hear from
-          you.
+          Let's discuss your needs and find optimum solution for you.
+        </p>
+        <p>Just choose a time that suits you with the button below.</p>
+        <!-- Calendly link widget begin -->
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
+        <script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          type="text/javascript"
+          async
+          defer
+        ></script>
+        <a
+          class="btn btn-primary mt-6"
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jacovan/30min'});return false;"
+          >Schedule a call</a
+        >
+        <!-- Calendly link widget end -->
+
+        <h2 class="font-heading text-4xl font-bold mt-10">
+          Just have a question?
+        </h2>
+        <p class="mt-2">
+          I'd love to hear from you. Fill in the contact form below and I'll get
+          back to you.
         </p>
         <ContactForm />
       </section>
