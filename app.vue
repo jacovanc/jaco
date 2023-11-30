@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Cookies from "js-cookie";
-import { ref, onMounted, watchEffect, computed } from "vue";
+import { computed, onMounted, ref, watchEffect } from "vue";
 
 const THEME_KEY = "user-theme";
 const themeCookie = useCookie(THEME_KEY);
@@ -14,6 +14,20 @@ const currentTheme: any = ref(initialTheme);
 
 console.info("currentTheme: " + currentTheme);
 console.info("currentTheme.value: " + currentTheme.value);
+
+const themeClass = computed(() => {
+  return currentTheme.value !== null
+    ? currentTheme.value
+      ? "dark"
+      : "light"
+    : "";
+});
+
+useHead({
+  htmlAttrs: {
+    "data-theme": themeClass,
+  },
+});
 
 onMounted(() => {
   console.info("onMounted");
@@ -36,13 +50,6 @@ onMounted(() => {
       document.documentElement.setAttribute("data-theme", themeClass.value);
     }
   });
-});
-const themeClass = computed(() => {
-  return currentTheme.value !== null
-    ? currentTheme.value
-      ? "dark"
-      : "light"
-    : "";
 });
 </script>
 
