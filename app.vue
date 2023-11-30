@@ -4,16 +4,11 @@ import { computed, onMounted, ref, watchEffect } from "vue";
 
 const THEME_KEY = "user-theme";
 const themeCookie = useCookie(THEME_KEY);
-console.info("themeCookie: " + themeCookie);
 
 // If the cookie exists, set initialTheme to the value of the cookie. Otherwise set it to null.
 const initialTheme = themeCookie.value === undefined ? null : themeCookie.value;
-console.info("initialTheme: " + initialTheme);
 
 const currentTheme: any = ref(initialTheme);
-
-console.info("currentTheme: " + currentTheme);
-console.info("currentTheme.value: " + currentTheme.value);
 
 const themeClass = computed(() => {
   return currentTheme.value !== null
@@ -30,8 +25,6 @@ useHead({
 });
 
 onMounted(() => {
-  console.info("onMounted");
-  console.info("currentTheme.value: " + currentTheme.value);
   if (currentTheme.value === null) {
     // Set to system theme preference
     currentTheme.value = window.matchMedia("(prefers-color-scheme: dark)")
