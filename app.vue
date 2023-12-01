@@ -38,6 +38,9 @@ onMounted(() => {
     setTheme();
   });
 });
+
+// Provide the currentTheme state to all components
+provide("currentTheme", currentTheme); // Note: This is already true/false for dark/light
 </script>
 
 <template>

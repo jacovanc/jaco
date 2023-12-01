@@ -27,6 +27,21 @@ let whyMe = {
   "Long-Term Support":
     "You'll receive dedicated support and hosting for 6 months, with the option for extended assistance.",
 };
+
+// Inject the currentTheme provided in App.vue
+const currentTheme: any = inject("currentTheme");
+
+// Computed property for calendlyThemeSettings
+let calendlyThemeSettings = computed(() => {
+  return currentTheme.value === "true" || currentTheme.value === true
+    ? `?primary_color=2980b9&background_color=2A303C&text_color=ffffff`
+    : `?primary_color=2980b9`;
+});
+
+onMounted(() => {
+  currentTheme.value =
+    document.documentElement.getAttribute("data-theme") || "light";
+});
 </script>
 
 <template>
@@ -476,7 +491,7 @@ let whyMe = {
     <div class="bg-base-100">
       <section class="container py-20">
         <h2 id="contact" class="font-heading text-4xl font-bold">
-          &#x1F4DE; Schedule a call
+          Schedule a call
         </h2>
         <p class="mt-2">
           Let's discuss your needs and find optimum solution for you.
@@ -484,7 +499,7 @@ let whyMe = {
         <p>Just choose a time that suits you with the button below.</p>
         <a
           class="btn btn-primary mt-6"
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jacovan/initial-meeting?primary_color=2980b9'});return false;"
+          :onclick="`Calendly.initPopupWidget({url: 'https://calendly.com/jacovan/initial-meeting${calendlyThemeSettings}'});return false;`"
           >Schedule a call</a
         >
 
