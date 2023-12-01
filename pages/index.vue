@@ -484,7 +484,7 @@ let whyMe = {
         <p>Just choose a time that suits you with the button below.</p>
         <a
           class="btn btn-primary mt-6"
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jacovan/30min'});return false;"
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jacovan/initial-meeting?primary_color=2980b9'});return false;"
           >Schedule a call</a
         >
 
@@ -494,6 +494,11 @@ let whyMe = {
         <p class="mt-2">
           I'd love to hear from you. Fill in the contact form below and I'll get
           back to you.
+        </p>
+        <p class="mt-2">
+          If you are scheduling a call but my availability doesn't suit you on
+          the above calendar, I can also do out of hours calls. Just let me know
+          in the form below.
         </p>
         <ContactForm />
       </section>

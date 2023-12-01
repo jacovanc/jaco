@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref, watchEffect } from "vue";
 
+// Theme setup. NOTE - there is a head script in nuxt.config.js that sets the theme initially to prevent flash of wrong theme
 const THEME_KEY = "user-theme";
 const currentTheme = ref();
 
