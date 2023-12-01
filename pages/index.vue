@@ -11,9 +11,7 @@ defineOgImageScreenshot({
 
 let additionalServices = {
   "SEO Advice":
-    "Boost your site's visibility and draw more traffic with expert SEO strategies.",
-  "Content Creation":
-    "Captivate your audience with professionally crafted content that resonates with your brand's voice.",
+    "Boost your site's visibility and draw more traffic with SEO advice for your website.",
   "Website Maintenance":
     "Keep your site running smoothly with regular updates and maintenance.",
   "Advanced Analytics Setup":
@@ -198,14 +196,6 @@ let whyMe = {
         Your website is the digital face of your business. It's the first step
         in building a relationship with your customers.
       </p>
-      <p
-        class="mb-2 text-center mt-4 md:w-[39rem] w-[22rem] max-w-full block m-auto"
-      >
-        Note sure what something means? &nbsp;&nbsp;
-        <a class="btn btn-sm btn-accent btn-outline mt-2" href="#faq"
-          >Ask me!</a
-        >
-      </p>
     </div>
 
     <div class="container lg:max-w-[1200px] mt-10 md:mt-12 lg:mt-16">
@@ -265,7 +255,7 @@ let whyMe = {
         <!-- Expansion Package -->
         <Package
           class="max-w-[370px] sm:max-w-none sm:w-full md:max-w-[300px] md:w-auto lg:max-w-[370px] md:scale-95 lg:scale-100 z-1 md:rotate-[2deg]"
-          :packageName="'🚀 Expansion Package'"
+          :packageName="'&#x1F680; Expansion Package'"
           :listItems="[
             'Advanced custom solutions for larger-scale projects.',
             'Sophisticated architecure bespoke to project requirements (PWAs, SPAs, headless CMS, APIs etc)',
@@ -303,6 +293,12 @@ let whyMe = {
         ]"
       />
     </div>
+    <p
+      class="mb-2 text-center mt-4 md:w-[39rem] w-[22rem] max-w-full block m-auto"
+    >
+      Note sure what something means? &nbsp;&nbsp;
+      <a class="btn btn-sm btn-accent btn-outline mt-2" href="#faq">Ask me!</a>
+    </p>
   </section>
 
   <div class="bg-base-100">
@@ -357,7 +353,10 @@ let whyMe = {
         <ul class="steps steps-vertical mt-2">
           <li class="step step-secondary items-start">
             <p class="text-left text-sm ml-2 my-2">
-              <span class="font-bold text-xl mt-6">Get in touch!</span> <br />
+              <span class="font-bold text-xl mt-6"
+                >&#x1F4DE; Get in touch!</span
+              >
+              <br />
               We'll arrange a video call where we will discuss your needs in
               detail.
             </p>
@@ -396,7 +395,7 @@ let whyMe = {
           </li>
           <li class="step step-secondary">
             <p class="text-left text-sm ml-2 my-2">
-              <span class="font-bold text-xl">Launch</span> <br />
+              <span class="font-bold text-xl">&#x1F680; Launch</span> <br />
               Time to get your website live! I'll deploy your site and provide 6
               months of support and hosting included in the price.
             </p>
@@ -477,7 +476,7 @@ let whyMe = {
     <div class="bg-base-100">
       <section class="container py-20">
         <h2 id="contact" class="font-heading text-4xl font-bold">
-          Book a call
+          &#x1F4DE; Schedule a call
         </h2>
         <p class="mt-2">
           Let's discuss your needs and find optimum solution for you.
