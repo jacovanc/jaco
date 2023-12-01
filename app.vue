@@ -23,7 +23,10 @@ function setTheme() {
 onMounted(() => {
   const theme = localStorage.getItem(THEME_KEY);
 
-  currentTheme.value = null; // Use default
+  // Update currentTheme from the data-theme attribute
+  currentTheme.value =
+    document.documentElement.getAttribute("data-theme") === "dark";
+
   if (theme) {
     currentTheme.value = theme;
   }

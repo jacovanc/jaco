@@ -55,9 +55,13 @@ export default defineNuxtConfig({
               // This function will run immediately, checking local storage and setting the theme
               var THEME_KEY = 'user-theme';
               var savedTheme = localStorage.getItem(THEME_KEY);
-              console.log("saved theme " + savedTheme)
-              var theme = (savedTheme === true || savedTheme === "true") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
-              console.log("theme " + theme)
+              var hasSavedTheme = savedTheme !== null && savedTheme !== undefined;
+              var theme = 'light';
+              if(hasSavedTheme) { // Set to the saved theme if it exists
+                theme = (savedTheme === true || savedTheme === "true") ? 'dark' : 'light';
+              } else { // Otherwise default to system
+                theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+              }
               document.documentElement.setAttribute('data-theme', theme);
             })();
           `,
