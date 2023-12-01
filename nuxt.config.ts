@@ -48,6 +48,22 @@ export default defineNuxtConfig({
           defer: true,
           async: true,
         },
+        {
+          // Set the theme based on the user's preference before any content is shown
+          innerHTML: `
+            (function() {
+              // This function will run immediately, checking local storage and setting the theme
+              var THEME_KEY = 'user-theme';
+              var savedTheme = localStorage.getItem(THEME_KEY);
+              console.log("saved theme " + savedTheme)
+              var theme = (savedTheme === true || savedTheme === "true") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+              console.log("theme " + theme)
+              document.documentElement.setAttribute('data-theme', theme);
+            })();
+          `,
+          type: "text/javascript",
+          charset: "utf-8",
+        },
       ],
       link: [
         {
