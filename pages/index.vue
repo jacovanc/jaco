@@ -438,37 +438,41 @@ onMounted(() => {
     </section>
 
     <div class="bg-base-200">
-      <section id="process" class="container py-20">
-        <div
-          class="text-primary font-bold text-lg dark:text-primary-light font-heading"
-        >
-          Unveiling the process
-        </div>
+      <section id="process" class="py-20">
+        <div class="container">
+          <div
+            class="text-primary font-bold text-lg dark:text-primary-light font-heading"
+          >
+            Unveiling the process
+          </div>
 
-        <h2 class="font-heading text-4xl font-bold mt-2">How does it work?</h2>
-        <!-- <p class="mt-6 mb-2">
+          <h2 class="font-heading text-4xl font-bold mt-2">
+            How does it work?
+          </h2>
+          <!-- <p class="mt-6 mb-2">
           Here's a brief overview of the steps involved in creating your new
           website, from start to finish.
         </p> -->
-        <ul class="mt-6">
-          <li class="pb-6 flex items-center">
+        </div>
+        <ul class="mt-6 max-w-[930px] m-auto px-4">
+          <li class="number number-left pb-6 flex items-start">
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center mr-6"
             >
               1
             </div>
-            <p class="text-left text-sm mr-10">
-              <span class="font-bold text-xl mt-6"
-                >&#x1F4DE; Get in touch!</span
-              >
+            <p class="text-left text-sm sm:mr-10">
+              <span class="font-bold text-xl mt-6">Get in touch!</span>
               <br />
               We'll arrange a video call where we will discuss your needs in
               detail.
             </p>
           </li>
 
-          <li class="py-6 flex items-start">
-            <p class="text-left text-sm ml-5">
+          <li
+            class="number number-right my-6 flex items-start justify-between w-full"
+          >
+            <p class="text-left text-sm sm:ml-12">
               <span class="font-bold text-xl">Proposal</span>
               <br />
               I'll send you a proposal based on our discussion. This will
@@ -481,21 +485,21 @@ onMounted(() => {
               2
             </div>
           </li>
-          <li class="py-6 flex items-start">
+          <li class="number number-left py-6 flex items-start">
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center mr-6"
             >
               3
             </div>
-            <p class="text-left text-sm mr-10">
+            <p class="text-left text-sm sm:mr-10">
               <span class="font-bold text-xl">Development</span>
               <br />
               Once you're happy with the proposal, I'll kick start the
               development process.
             </p>
           </li>
-          <li class="py-6 flex items-start">
-            <p class="text-left text-sm ml-5">
+          <li class="number number-right my-6 flex items-start justify-between">
+            <p class="text-left text-sm sm:ml-12">
               <span class="font-bold text-xl">Feedback & Adjustments</span>
               <br />
               Throughout the development process I will keep you updated and
@@ -507,21 +511,21 @@ onMounted(() => {
               5
             </div>
           </li>
-          <li class="py-6 flex items-start">
+          <li class="number number-left py-6 flex items-start">
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center mr-6"
             >
               6
             </div>
-            <p class="text-left text-sm mr-10">
+            <p class="text-left text-sm sm:mr-10">
               <span class="font-bold text-xl">Quality Assurance</span> <br />
               Once development is complete, I'll perform a thorough quality and
               performance check, preparing your site ready to go live.
             </p>
           </li>
-          <li class="pt-6 flex items-start">
-            <p class="text-left text-sm ml-5">
-              <span class="font-bold text-xl">&#x1F680; Launch</span> <br />
+          <li class="number number-right mt-6 flex items-start justify-between">
+            <p class="text-left text-sm sm:ml-12">
+              <span class="font-bold text-xl">Launch</span> <br />
               Time to get your website live! I'll deploy your site and provide 6
               months of support and hosting included in the price.
             </p>
@@ -532,11 +536,14 @@ onMounted(() => {
             </div>
           </li>
         </ul>
-        <a
-          class="btn btn-accent shadow-2xl shadow-accent-light mt-6"
-          href="#contact"
-          >Get started!</a
-        >
+
+        <div class="container">
+          <a
+            class="btn btn-accent shadow-2xl shadow-accent-light mt-6"
+            href="#contact"
+            >Get started!</a
+          >
+        </div>
       </section>
     </div>
 
