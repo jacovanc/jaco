@@ -72,10 +72,10 @@ onMounted(() => {
     <!-- Introduction -->
     <div
       id="og_image_screenshot"
-      class="container max-w-full w-96 sm:w-[920px] sm:flex sm:flex-row sm:items-center sm:gap-10 sm:justify-center py-20"
+      class="container max-w-full w-96 sm:w-[920px] md:w-full sm:flex sm:flex-row sm:items-center sm:gap-10 sm:justify-center py-20"
     >
       <div>
-        <div class="w-96 max-w-full sm:w-72 md:w-80">
+        <div class="w-96 max-w-full sm:w-72 md:w-80 lg:w-[450px]">
           <!-- <div
               class="mb-3 mx-auto overflow-hidden rounded-2xl shadow-lg max-w-full relative pt-[100%]"
             > -->
@@ -101,7 +101,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="sm:pb-6 w-80 md:w-96 max-w-full" id="sub-hero">
+      <div class="sm:pb-6 w-80 md:w-[500px] max-w-full" id="sub-hero">
         <h2 class="text-3xl sm:text-xl md:text-3xl font-sans font-bold">
           Your
           <span class="text-secondary dark:text-secondary-light"
@@ -450,7 +450,7 @@ onMounted(() => {
           Here's a brief overview of the steps involved in creating your new
           website, from start to finish.
         </p> -->
-        <ul class="mt-6 max-w-[600px]">
+        <ul class="mt-6">
           <li class="pb-6 flex items-center">
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center mr-6"
@@ -468,7 +468,7 @@ onMounted(() => {
           </li>
 
           <li class="py-6 flex items-start">
-            <p class="text-left text-sm ml-10">
+            <p class="text-left text-sm ml-5">
               <span class="font-bold text-xl">Proposal</span>
               <br />
               I'll send you a proposal based on our discussion. This will
@@ -495,7 +495,7 @@ onMounted(() => {
             </p>
           </li>
           <li class="py-6 flex items-start">
-            <p class="text-left text-sm ml-10">
+            <p class="text-left text-sm ml-5">
               <span class="font-bold text-xl">Feedback & Adjustments</span>
               <br />
               Throughout the development process I will keep you updated and
@@ -520,7 +520,7 @@ onMounted(() => {
             </p>
           </li>
           <li class="pt-6 flex items-start">
-            <p class="text-left text-sm ml-10">
+            <p class="text-left text-sm ml-5">
               <span class="font-bold text-xl">&#x1F680; Launch</span> <br />
               Time to get your website live! I'll deploy your site and provide 6
               months of support and hosting included in the price.
