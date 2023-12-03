@@ -16,7 +16,7 @@ let additionalServices = {
   },
   "Website Maintenance": {
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z" />  <path stroke-linecap="round" stroke-linejoin="round" d="M4.867 19.125h.008v.008h-.008v-.008z" /></svg>`,
-    text: "Boost your site's visibility and draw more traffic with SEO advice for your website.",
+    text: "Keep your website up-to-date and secure with regular maintenance.",
   },
   "Advanced Analytics Setup": {
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" /></svg>`,
@@ -410,7 +410,7 @@ onMounted(() => {
       <div
         class="text-secondary font-bold text-lg dark:text-secondary-light font-heading"
       >
-        Not enough? I've got you covered.
+        Need something else?
       </div>
       <h2 class="font-heading text-4xl font-bold mt-2">Additional Services</h2>
       <ul class="mt-10 mb-6 align-middle">
@@ -702,7 +702,12 @@ onMounted(() => {
     <!-- FAQ Section -->
     <div class="bg-base-200">
       <section id="faq" class="container py-20">
-        <h2 class="font-heading text-4xl font-bold">
+        <div
+          class="text-primary font-bold text-lg dark:text-primary-light font-heading"
+        >
+          Got questions?
+        </div>
+        <h2 class="font-heading text-4xl font-bold mt-2">
           Frequently Asked Questions
         </h2>
         <FAQAccordion
@@ -743,12 +748,15 @@ onMounted(() => {
     <!-- Contact Section -->
     <div class="bg-base-100">
       <section class="container py-20">
-        <h2 id="contact" class="font-heading text-4xl font-bold">
+        <div
+          class="text-primary font-bold text-lg dark:text-primary-light font-heading"
+        >
+          Don't hesitate to get in touch
+        </div>
+        <h2 id="contact" class="font-heading text-4xl font-bold mt-2">
           Schedule a call
         </h2>
-        <div
-          class="flex flex-col md:flex-row gap-6 sm:gap-6 md:gap-20 justify-start"
-        >
+        <div class="flex flex-col md:flex-row gap-6 md:gap-32 justify-start">
           <p class="mt-2">
             Let's discuss your needs and find optimum solution for you.
             <br />Just choose a time that suits you with the button below.
