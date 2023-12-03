@@ -15,7 +15,7 @@ let additionalServices = {
     text: "Boost your site's visibility and draw more traffic with SEO advice for your website.",
   },
   "Website Maintenance": {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />/svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z" />  <path stroke-linecap="round" stroke-linejoin="round" d="M4.867 19.125h.008v.008h-.008v-.008z" /></svg>`,
     text: "Boost your site's visibility and draw more traffic with SEO advice for your website.",
   },
   "Advanced Analytics Setup": {
@@ -25,19 +25,19 @@ let additionalServices = {
 };
 let whyMe = {
   "Client-Centric Approach": {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1.5em] h-[1.5em]"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1em] h-[1em]"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>`,
     text: "I work closely with you to understand your needs and goals, ensuring a solution that truly reflects your vision.",
   },
   "Beginner Friendly": {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1.5em] h-[1.5em]"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1em] h-[1em]]"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
     text: "I offer clear, straightforward guidance, making web development accessible for everyone.",
   },
   "Flexible Solutions": {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1.5em] h-[1.5em]">  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1em] h-[1em]">  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>`,
     text: "I offer flexible solutions to suit your needs, from simple websites to sophisticated web applications.",
   },
   "Long-Term Support": {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1.5em] h-[1.5em]">  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1em] h-[1em]">  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>`,
     text: "I'm here to support you and your business, long after your website is live.",
   },
 };
@@ -170,12 +170,31 @@ onMounted(() => {
         Don't rent your website from a third-party platform. Own your website,
         let it grow with your business.
       </p>
-
       <ul class="flex flex-wrap gap-4 mt-10">
         <li
           class="flex-grow border bg-primary bg-opacity-5 shadow-lg p-4 border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
-          <strong class="block mb-2 text-xl">Complete Control</strong>
+          <div class="flex justify-between items-center mb-2 gap-2">
+            <strong class="inline text-xl">Complete Control</strong>
+            <div
+              class="text-3xl text-right text-primary dark:text-primary-light"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-[1] h-[1em]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"
+                />
+              </svg>
+            </div>
+          </div>
           <strong class="text-primary dark:text-primary-light text-lg"
             >Your website, your rules.</strong
           >
@@ -185,26 +204,66 @@ onMounted(() => {
         <li
           class="flex-grow border p-4 bg-primary bg-opacity-5 shadow-lg border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
-          <strong class="block mb-2 text-xl">Growth-Ready</strong>
+          <div class="flex justify-between items-center mb-2 gap-2">
+            <strong class="inline text-xl">Growth Ready</strong>
+            <div
+              class="text-3xl text-right text-primary dark:text-primary-light"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-[1em] h-[1em]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+                />
+              </svg>
+            </div>
+          </div>
           <strong class="text-primary dark:text-primary-light text-lg"
             >Evolve</strong
           >
           your website in tandem with your business needs,
           <strong class="text-primary dark:text-primary-light text-lg"
             >without starting from scratch</strong
-          >
+          >.
         </li>
         <li
           class="flex-grow border p-4 bg-primary bg-opacity-5 shadow-lg border-primary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
         >
-          <strong class="block mb-2 text-xl">Vendor Independence</strong>
+          <div class="flex justify-between items-center mb-2 gap-2">
+            <strong class="inline text-xl">No Lock-in</strong>
+            <div
+              class="text-3xl text-right text-primary dark:text-primary-light"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-[1em] h-[1em]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                />
+              </svg>
+            </div>
+          </div>
           <strong class="text-primary dark:text-primary-light text-lg"
             >Break free</strong
           >
           from the confines of platforms like Wix.
           <strong class="text-primary dark:text-primary-light text-lg"
             >Embrace complete control</strong
-          >, enhanced functionality, and the freedom to adapt and grow.
+          >, do what you want with it.
         </li>
         <!-- More list items here -->
       </ul>
@@ -345,10 +404,12 @@ onMounted(() => {
   <div class="bg-base-100">
     <!-- Additional Services Section -->
     <section id="additional-services" class="container py-20">
-      <h2 class="font-heading text-4xl font-bold">Additional Services</h2>
-      <p class="mt-2 mb-2">
-        I'm here to help you get the most out of your website.
-      </p>
+      <div
+        class="text-secondary font-bold text-lg dark:text-secondary-light font-heading"
+      >
+        Not enough? I've got you covered.
+      </div>
+      <h2 class="font-heading text-4xl font-bold mt-2">Additional Services</h2>
       <ul class="my-6 align-middle">
         <li
           v-for="(item, key) in additionalServices"
@@ -378,16 +439,25 @@ onMounted(() => {
 
     <div class="bg-base-200">
       <section id="process" class="container py-20">
-        <h2 class="font-heading text-4xl font-bold">
-          What does the process look like?
-        </h2>
-        <p class="mt-2 mb-2">
+        <div
+          class="text-primary font-bold text-lg dark:text-primary-light font-heading"
+        >
+          Unveiling the process
+        </div>
+
+        <h2 class="font-heading text-4xl font-bold mt-2">How does it work?</h2>
+        <!-- <p class="mt-6 mb-2">
           Here's a brief overview of the steps involved in creating your new
           website, from start to finish.
-        </p>
-        <ul class="steps steps-vertical mt-2">
-          <li class="step step-secondary items-start">
-            <p class="text-left text-sm ml-2 my-2">
+        </p> -->
+        <ul class="mt-6 max-w-[600px]">
+          <li class="pb-6 flex items-center">
+            <div
+              class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center mr-6"
+            >
+              1
+            </div>
+            <p class="text-left text-sm mr-10">
               <span class="font-bold text-xl mt-6"
                 >&#x1F4DE; Get in touch!</span
               >
@@ -396,44 +466,70 @@ onMounted(() => {
               detail.
             </p>
           </li>
-          <!-- We should probably add some info explaining each section. Perhaps collapsable like the faqs -->
-          <li class="step step-secondary">
-            <p class="text-left text-sm ml-2 my-2">
-              <span class="font-bold text-xl">Proposal</span> <br />
+
+          <li class="py-6 flex items-start">
+            <p class="text-left text-sm ml-10">
+              <span class="font-bold text-xl">Proposal</span>
+              <br />
               I'll send you a proposal based on our discussion. This will
               include a breakdown of the project, timeline, and cost. If it's
               not right for you, we will iterate on it until it is.
             </p>
+            <div
+              class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center ml-6"
+            >
+              2
+            </div>
           </li>
-          <li class="step step-secondary">
-            <p class="text-left text-sm ml-2 my-2">
+          <li class="py-6 flex items-start">
+            <div
+              class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center mr-6"
+            >
+              3
+            </div>
+            <p class="text-left text-sm mr-10">
               <span class="font-bold text-xl">Development</span>
               <br />
               Once you're happy with the proposal, I'll kick start the
               development process.
             </p>
           </li>
-          <li class="step step-secondary">
-            <p class="text-left text-sm ml-2 my-2">
+          <li class="py-6 flex items-start">
+            <p class="text-left text-sm ml-10">
               <span class="font-bold text-xl">Feedback & Adjustments</span>
               <br />
               Throughout the development process I will keep you updated and
               make adjustments that are within scope of the proposal as needed.
             </p>
+            <div
+              class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center ml-6"
+            >
+              5
+            </div>
           </li>
-          <li class="step step-secondary">
-            <p class="text-left text-sm ml-2 my-2">
+          <li class="py-6 flex items-start">
+            <div
+              class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center mr-6"
+            >
+              6
+            </div>
+            <p class="text-left text-sm mr-10">
               <span class="font-bold text-xl">Quality Assurance</span> <br />
               Once development is complete, I'll perform a thorough quality and
               performance check, preparing your site ready to go live.
             </p>
           </li>
-          <li class="step step-secondary">
-            <p class="text-left text-sm ml-2 my-2">
+          <li class="pt-6 flex items-start">
+            <p class="text-left text-sm ml-10">
               <span class="font-bold text-xl">&#x1F680; Launch</span> <br />
               Time to get your website live! I'll deploy your site and provide 6
               months of support and hosting included in the price.
             </p>
+            <div
+              class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center ml-6"
+            >
+              5
+            </div>
           </li>
         </ul>
         <a
@@ -447,7 +543,12 @@ onMounted(() => {
     <!-- Why Choose Jaco Section -->
     <div class="bg-base-100">
       <section id="why-choose-jaco" class="container py-20">
-        <h2 class="font-heading text-4xl font-bold">Why choose me?</h2>
+        <div
+          class="text-secondary font-bold text-lg dark:text-secondary-light font-heading"
+        >
+          Your success is my goal
+        </div>
+        <h2 class="font-heading text-4xl font-bold mt-2">Why choose me?</h2>
         <ul class="mt-6 align-middle">
           <!-- <li v-for="(item, key) in whyMe" :key="key" class="my-3 pl-7">
             <div
@@ -528,16 +629,22 @@ onMounted(() => {
         <h2 id="contact" class="font-heading text-4xl font-bold">
           Schedule a call
         </h2>
-        <p class="mt-2">
-          Let's discuss your needs and find optimum solution for you.
-        </p>
-        <p>Just choose a time that suits you with the button below.</p>
-        <a
-          class="btn btn-primary shadow-2xl shadow-primary-light mt-6"
-          :onclick="`Calendly.initPopupWidget({url: 'https://calendly.com/jacovan/initial-meeting${calendlyThemeSettings}'});return false;`"
-          >Schedule a call</a
+        <div
+          class="flex flex-col md:flex-row gap-6 sm:gap-6 md:gap-20 justify-start"
         >
+          <p class="mt-2">
+            Let's discuss your needs and find optimum solution for you.
+            <br />Just choose a time that suits you with the button below.
+          </p>
 
+          <div>
+            <a
+              class="btn btn-primary shadow-2xl shadow-primary-light"
+              :onclick="`Calendly.initPopupWidget({url: 'https://calendly.com/jacovan/initial-meeting${calendlyThemeSettings}'});return false;`"
+              >Schedule a call</a
+            >
+          </div>
+        </div>
         <h2 class="font-heading text-4xl font-bold mt-10">
           Just have a question?
         </h2>
