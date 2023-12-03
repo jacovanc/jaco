@@ -584,14 +584,14 @@ onMounted(() => {
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center ml-6"
             >
-              5
+              4
             </div>
           </li>
           <li class="number number-left py-6 flex items-start">
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center mr-6"
             >
-              6
+              5
             </div>
             <div class="text-left sm:mr-10">
               <svg
@@ -642,7 +642,7 @@ onMounted(() => {
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center ml-6"
             >
-              5
+              6
             </div>
           </li>
         </ul>
