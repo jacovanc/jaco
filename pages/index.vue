@@ -101,7 +101,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="sm:pb-6 w-80 md:w-[500px] max-w-full" id="sub-hero">
+      <div class="sm:pb-6 w-80 md:w-[570px] max-w-full" id="sub-hero">
         <h2 class="text-3xl sm:text-xl md:text-3xl font-sans font-bold">
           Your
           <span class="text-secondary dark:text-secondary-light"
@@ -114,10 +114,13 @@ onMounted(() => {
           <span class="text-secondary dark:text-secondary-light font-bold"
             >digital presence</span
           >
-          that you
-          <span class="text-secondary dark:text-secondary-light font-bold"
-            >fully own</span
-          >.
+          that
+          <span class="inline-block">
+            you
+            <span class="text-secondary dark:text-secondary-light font-bold"
+              >fully own</span
+            >.
+          </span>
         </p>
         <a
           class="btn btn-accent shadow-2xl shadow-accent-light mt-6"
@@ -410,7 +413,7 @@ onMounted(() => {
         Not enough? I've got you covered.
       </div>
       <h2 class="font-heading text-4xl font-bold mt-2">Additional Services</h2>
-      <ul class="my-6 align-middle">
+      <ul class="mt-10 mb-6 align-middle">
         <li
           v-for="(item, key) in additionalServices"
           :key="key"
@@ -454,31 +457,65 @@ onMounted(() => {
           website, from start to finish.
         </p> -->
         </div>
-        <ul class="mt-6 max-w-[930px] m-auto px-4">
+        <ul class="mt-10 sm:max-w-[750px] md:max-w-[960px] m-auto px-4">
           <li class="number number-left pb-6 flex items-start">
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center mr-6"
             >
               1
             </div>
-            <p class="text-left text-sm sm:mr-10">
-              <span class="font-bold text-xl mt-6">Get in touch!</span>
+            <div class="text-left sm:mr-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline mr-2 text-primary dark:text-primary-light"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                />
+              </svg>
+
+              <span class="font-bold text-xl inline-block mb-4">
+                Get in touch!
+              </span>
               <br />
               We'll arrange a video call where we will discuss your needs in
               detail.
-            </p>
+            </div>
           </li>
 
           <li
             class="number number-right my-6 flex items-start justify-between w-full"
           >
-            <p class="text-left text-sm sm:ml-12">
-              <span class="font-bold text-xl">Proposal</span>
+            <div class="text-left sm:ml-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary dark:text-primary-light inline mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                />
+              </svg>
+
+              <div class="font-bold text-xl inline-block mb-4 text-right">
+                Proposal
+              </div>
               <br />
               I'll send you a proposal based on our discussion. This will
               include a breakdown of the project, timeline, and cost. If it's
               not right for you, we will iterate on it until it is.
-            </p>
+            </div>
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center ml-6"
             >
@@ -491,20 +528,59 @@ onMounted(() => {
             >
               3
             </div>
-            <p class="text-left text-sm sm:mr-10">
-              <span class="font-bold text-xl">Development</span>
+            <div class="text-left sm:mr-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary dark:text-primary-light inline mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+
+              <span class="font-bold text-xl inline-block mb-4"
+                >Development</span
+              >
               <br />
               Once you're happy with the proposal, I'll kick start the
               development process.
-            </p>
+            </div>
           </li>
           <li class="number number-right my-6 flex items-start justify-between">
-            <p class="text-left text-sm sm:ml-12">
-              <span class="font-bold text-xl">Feedback & Adjustments</span>
+            <div class="text-left sm:ml-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary dark:text-primary-light inline mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                />
+              </svg>
+
+              <span class="font-bold text-xl inline-block mb-4"
+                >Feedback & Adjustments</span
+              >
               <br />
               Throughout the development process I will keep you updated and
               make adjustments that are within scope of the proposal as needed.
-            </p>
+            </div>
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center ml-6"
             >
@@ -517,18 +593,52 @@ onMounted(() => {
             >
               6
             </div>
-            <p class="text-left text-sm sm:mr-10">
-              <span class="font-bold text-xl">Quality Assurance</span> <br />
+            <div class="text-left sm:mr-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary dark:text-primary-light inline mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"
+                />
+              </svg>
+
+              <span class="font-bold text-xl inline-block mb-4"
+                >Quality Assurance</span
+              >
+              <br />
               Once development is complete, I'll perform a thorough quality and
               performance check, preparing your site ready to go live.
-            </p>
+            </div>
           </li>
           <li class="number number-right mt-6 flex items-start justify-between">
-            <p class="text-left text-sm sm:ml-12">
-              <span class="font-bold text-xl">Launch</span> <br />
+            <div class="text-left sm:ml-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary dark:text-primary-light inline mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                />
+              </svg>
+
+              <span class="font-bold text-xl inline-block mb-4">Launch</span>
+              <br />
               Time to get your website live! I'll deploy your site and provide 6
               months of support and hosting included in the price.
-            </p>
+            </div>
             <div
               class="rounded-full bg-primary w-10 h-10 flex-shrink-0 text-primary-content font-bold text-center flex justify-center items-center ml-6"
             >
