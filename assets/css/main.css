@@ -12,12 +12,3 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-.tick-list li {
-  list-style: none; /* Removes default list style */
-  padding-left: 25px; /* Adjust as needed */
-  background-image: url("/static/svg/tick.svg"); /* Path to your SVG */
-  background-repeat: no-repeat;
-  background-size: 20px; /* Size of the icon */
-  background-position: 0 2px; /* Positioning of the icon */
-  margin-bottom: 10px;
-}

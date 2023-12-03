@@ -37,7 +37,7 @@ export default defineNuxtConfig({
       type: "Person",
     },
     twitter: "@jac0van",
-    // linkedin: 'https://www.linkedin.com/in/jacovan/',
+    // linkedin: "https://www.linkedin.com/in/jacovan/",
   },
   app: {
     head: {

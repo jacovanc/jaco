@@ -60,7 +60,7 @@
       <div class="mt-6">
         <button
           type="submit"
-          class="btn btn-primary w-auto"
+          class="btn btn-primary shadow-2xl shadow-primary-light w-auto"
           :disabled="loading"
         >
           <span v-if="loading" class="loading loading-spinner"></span>

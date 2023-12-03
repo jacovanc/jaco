@@ -10,22 +10,36 @@ defineOgImageScreenshot({
 });
 
 let additionalServices = {
-  "SEO Advice":
-    "Boost your site's visibility and draw more traffic with SEO advice for your website.",
-  "Website Maintenance":
-    "Keep your site running smoothly with regular updates and maintenance.",
-  "Advanced Analytics Setup":
-    "Gain valuable insights into your site's performance and user behavior, by tracking specific interactions.",
+  "SEO Advice": {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" /></svg>`,
+    text: "Boost your site's visibility and draw more traffic with SEO advice for your website.",
+  },
+  "Website Maintenance": {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />/svg>`,
+    text: "Boost your site's visibility and draw more traffic with SEO advice for your website.",
+  },
+  "Advanced Analytics Setup": {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" /></svg>`,
+    text: "Gain valuable insights into your site's performance and user behavior, by tracking specific interactions.",
+  },
 };
 let whyMe = {
-  "Client-Centric Approach":
-    "Your needs and goals are at the forefront of every decision, ensuring a solution that truly reflects your vision.",
-  "Beginner-Friendly":
-    "I offer clear, straightforward guidance, making web development accessible for everyone.",
-  "Flexible Solutions":
-    "My services are tailored to adapt and grow with your business, ensuring longevity and relevance.",
-  "Long-Term Support":
-    "You'll receive dedicated support and hosting for 6 months, with the option for extended assistance.",
+  "Client-Centric Approach": {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1.5em] h-[1.5em]"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>`,
+    text: "I work closely with you to understand your needs and goals, ensuring a solution that truly reflects your vision.",
+  },
+  "Beginner Friendly": {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1.5em] h-[1.5em]"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
+    text: "I offer clear, straightforward guidance, making web development accessible for everyone.",
+  },
+  "Flexible Solutions": {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1.5em] h-[1.5em]">  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>`,
+    text: "I offer flexible solutions to suit your needs, from simple websites to sophisticated web applications.",
+  },
+  "Long-Term Support": {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[1.5em] h-[1.5em]">  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>`,
+    text: "I'm here to support you and your business, long after your website is live.",
+  },
 };
 
 // Inject the currentTheme provided in App.vue
@@ -105,7 +119,11 @@ onMounted(() => {
             >fully own</span
           >.
         </p>
-        <a class="btn btn-accent mt-6" href="#packages">View Packages</a>
+        <a
+          class="btn btn-accent shadow-2xl shadow-accent-light mt-6"
+          href="#packages"
+          >View Packages</a
+        >
       </div>
     </div>
   </section>
@@ -191,7 +209,11 @@ onMounted(() => {
         <!-- More list items here -->
       </ul>
 
-      <a class="btn btn-accent mt-6" href="#contact">Contact me!</a>
+      <a
+        class="btn btn-accent shadow-2xl shadow-accent-light mt-6"
+        href="#contact"
+        >Contact me!</a
+      >
     </section>
   </div>
   <!-- Packages Section -->
@@ -312,7 +334,11 @@ onMounted(() => {
       class="mb-2 text-center mt-4 md:w-[39rem] w-[22rem] max-w-full block m-auto"
     >
       Note sure what something means? &nbsp;&nbsp;
-      <a class="btn btn-sm btn-accent btn-outline mt-2" href="#faq">Ask me!</a>
+      <a
+        class="btn btn-sm btn-accent shadow-2xl shadow-accent-light btn-outline mt-2"
+        href="#faq"
+        >Ask me!</a
+      >
     </p>
   </section>
 
@@ -325,35 +351,29 @@ onMounted(() => {
       </p>
       <ul class="my-6 align-middle">
         <li
-          v-for="(value, key) in additionalServices"
+          v-for="(item, key) in additionalServices"
           :key="key"
           class="my-3 pl-7"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
+          <div
             class="w-[30px] h-6 text-secondary dark:text-secondary-light inline-block align-middle -ml-7 pr-[6px]"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
+            v-html="item.icon"
+          ></div>
 
           <strong class="text-secondary dark:text-secondary-light align-middle"
             >{{ key }}:
           </strong>
-          <p class="align-middle inline">&nbsp;{{ value }}</p>
+          <p class="align-middle inline">&nbsp;{{ item.text }}</p>
         </li>
       </ul>
       <p class="mt-6">
         Get in touch to discuss your needs and find out how I can help you.
       </p>
-      <a class="btn btn-accent mt-6" href="#contact">Discuss with me</a>
+      <a
+        class="btn btn-accent shadow-2xl shadow-accent-light mt-6"
+        href="#contact"
+        >Discuss with me</a
+      >
     </section>
 
     <div class="bg-base-200">
@@ -416,7 +436,11 @@ onMounted(() => {
             </p>
           </li>
         </ul>
-        <a class="btn btn-accent mt-6" href="#contact">Get started!</a>
+        <a
+          class="btn btn-accent shadow-2xl shadow-accent-light mt-6"
+          href="#contact"
+          >Get started!</a
+        >
       </section>
     </div>
 
@@ -425,27 +449,34 @@ onMounted(() => {
       <section id="why-choose-jaco" class="container py-20">
         <h2 class="font-heading text-4xl font-bold">Why choose me?</h2>
         <ul class="mt-6 align-middle">
-          <li v-for="(value, key) in whyMe" :key="key" class="my-3 pl-7">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
+          <!-- <li v-for="(item, key) in whyMe" :key="key" class="my-3 pl-7">
+            <div
               class="w-[30px] h-6 text-primary dark:text-primary-light inline-block align-middle -ml-7 pr-[6px]"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
+              v-html="item.icon"
+            ></div>
 
             <strong class="text-primary dark:text-primary-light align-middle"
               >{{ key }}:
             </strong>
-            <p class="align-middle inline">&nbsp;{{ value }}</p>
-          </li>
+            <p class="align-middle inline">&nbsp;{{ item.text }}</p>
+          </li> -->
+
+          <ul class="flex flex-wrap gap-4 mt-10">
+            <li
+              v-for="(item, key) in whyMe"
+              :key="key"
+              class="flex-grow border bg-secondary bg-opacity-5 shadow-lg p-4 border-secondary rounded-lg w-full tn:w-5/12 md:w-3/12 xl:w-1/5"
+            >
+              <div class="flex justify-between items-center mb-2 gap-2">
+                <strong class="inline text-xl">{{ key }}</strong>
+                <div
+                  class="text-3xl text-right text-secondary dark:text-secondary-light"
+                  v-html="item.icon"
+                ></div>
+              </div>
+              {{ item.text }}
+            </li>
+          </ul>
         </ul>
       </section>
     </div>
@@ -483,7 +514,11 @@ onMounted(() => {
         />
 
         <p class="mt-6">Have more questions?</p>
-        <a class="btn btn-accent mt-3" href="#contact">Get in touch!</a>
+        <a
+          class="btn btn-accent shadow-2xl shadow-accent-light mt-3"
+          href="#contact"
+          >Get in touch!</a
+        >
       </section>
     </div>
 
@@ -498,7 +533,7 @@ onMounted(() => {
         </p>
         <p>Just choose a time that suits you with the button below.</p>
         <a
-          class="btn btn-primary mt-6"
+          class="btn btn-primary shadow-2xl shadow-primary-light mt-6"
           :onclick="`Calendly.initPopupWidget({url: 'https://calendly.com/jacovan/initial-meeting${calendlyThemeSettings}'});return false;`"
           >Schedule a call</a
         >

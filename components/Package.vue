@@ -64,13 +64,14 @@
             >
           </p>
           <a
-            class="btn shadow-lg"
+            class="btn shadow-2xl"
             :class="[
               color ? `border border-${color} ` : '',
               color ? `btn-${color}` : '',
+              color ? `shadow-${color}-light` : '',
               // color ? `bg-white` : 'bg-secondary',
               // color ? `text-${color}` : 'text-white',
-              color ? `text-white` : 'btn-accent',
+              color ? `text-white` : 'btn-accent shadow-accent-light',
             ]"
             href="#contact"
             >Enquire</a
