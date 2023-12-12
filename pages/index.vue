@@ -62,7 +62,7 @@ onMounted(() => {
   <!-- Hero Section -->
   <section
     id="hero"
-    class="flex items-center justify-center bg-base-200 h-screen min-h-[700px] max-h-[820px] sm:min-h-[540px] sm:max-h-[450px]"
+    class="flex items-center justify-center bg-base-200 h-screen min-h-[700px] max-h-[820px] sm:min-h-[540px] sm:max-h-[450px] lg:max-h-[640px]"
   >
     <!-- Opening Statement -->
     <!-- <h1 class="text-2xl font-heading font-bold text-primary">
