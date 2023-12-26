@@ -757,7 +757,7 @@ onMounted(() => {
           Schedule a call
         </h2>
         <div class="flex flex-col md:flex-row gap-6 md:gap-32 justify-start">
-          <p class="mt-2">
+          <p class="mt-6">
             Let's discuss your needs and find optimum solution for you.
             <br />Just choose a time that suits you with the button below.
           </p>
@@ -770,10 +770,10 @@ onMounted(() => {
             >
           </div>
         </div>
-        <h2 class="font-heading text-4xl font-bold mt-10">
+        <h2 class="font-heading text-4xl font-bold mt-16">
           Just have a question?
         </h2>
-        <p class="mt-2">
+        <p class="mt-6">
           I'd love to hear from you. Fill in the contact form below and I'll get
           back to you.
         </p>
